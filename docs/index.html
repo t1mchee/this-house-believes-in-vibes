@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Argument Landscape — Cambridge Union AI Debate Simulation</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>
+    :root {
+      --bg:       #0a0e14;
+      --surface:  #12171f;
+      --surface2: #1a2030;
+      --border:   #243044;
+      --text:     #e6edf3;
+      --text-dim: #7b8da0;
+      --accent:   #58a6ff;
+      --prop:     #3fb950;
+      --opp:      #f85149;
+      --gold:     #d29922;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+    ::selection { background: rgba(88,166,255,0.3); }
+
+    /* ── Header ──────────────────────────── */
+    .header {
+      padding: 2.5rem 3rem 1.5rem;
+      background: linear-gradient(180deg, #0f1923 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #58a6ff, #bc8cff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.3rem;
+    }
+    .header .subtitle { color: var(--text-dim); font-size: 0.95rem; }
+    .header .motion {
+      font-style: italic;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      margin-top: 1rem;
+    }
+    .stat { text-align: center; }
+    .stat-value { font-size: 1.6rem; font-weight: 700; color: var(--accent); }
+    .stat-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dim); }
+
+    /* ── Layout ──────────────────────────── */
+    .main {
+      display: grid;
+      grid-template-columns: 280px 1fr 340px;
+      height: calc(100vh - 180px);
+    }
+
+    /* ── Sidebar ─────────────────────────── */
+    .sidebar {
+      padding: 1.25rem;
+      border-right: 1px solid var(--border);
+      overflow-y: auto;
+      background: var(--surface);
+    }
+    .sidebar h3 {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-dim);
+      margin-bottom: 0.5rem;
+      margin-top: 1.25rem;
+    }
+    .sidebar h3:first-child { margin-top: 0; }
+
+    .color-toggle { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+    .color-btn {
+      padding: 0.35rem 0.65rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: transparent;
+      color: var(--text-dim);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .color-btn:hover { border-color: var(--accent); color: var(--text); }
+    .color-btn.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+      box-shadow: 0 0 12px rgba(88,166,255,0.3);
+    }
+
+    .filter-group label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      cursor: pointer;
+      padding: 0.15rem 0;
+    }
+    .filter-group input[type="checkbox"] { accent-color: var(--accent); }
+
+    /* Edge toggle */
+    .edge-controls { margin-top: 0.75rem; }
+    .edge-controls label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      cursor: pointer;
+      padding: 0.15rem 0;
+    }
+    .edge-legend {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 0.35rem;
+      font-size: 0.72rem;
+      color: var(--text-dim);
+    }
+    .edge-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .edge-swatch {
+      width: 18px;
+      height: 2px;
+      display: inline-block;
+    }
+
+    /* ── Cluster legend ──────────────────── */
+    .legend-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-bottom: 0.35rem;
+      font-size: 0.78rem;
+      cursor: pointer;
+      padding: 0.25rem 0.4rem;
+      border-radius: 6px;
+      transition: background 0.15s;
+    }
+    .legend-item:hover { background: rgba(88,166,255,0.08); }
+    .legend-swatch {
+      width: 14px;
+      height: 14px;
+      border-radius: 4px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .legend-name { font-weight: 600; }
+    .legend-count { color: var(--text-dim); font-size: 0.72rem; }
+
+    /* ── Chart area ──────────────────────── */
+    .chart-area {
+      position: relative;
+      background: var(--bg);
+    }
+    .chart-area .js-plotly-plot { height: 100% !important; }
+    .chart-hint {
+      position: absolute;
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      background: rgba(10,14,20,0.85);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* ── Detail panel ────────────────────── */
+    .detail-panel {
+      padding: 1.25rem;
+      border-left: 1px solid var(--border);
+      overflow-y: auto;
+      background: var(--surface);
+    }
+    .detail-panel h3 {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-dim);
+      margin-bottom: 0.5rem;
+    }
+    .empty-state {
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      margin-top: 3rem;
+      text-align: center;
+      line-height: 1.7;
+    }
+    .empty-state .icon { font-size: 2rem; margin-bottom: 0.5rem; display: block; }
+
+    .cluster-header {
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .cluster-header h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 0.25rem; }
+    .cluster-header .desc { font-size: 0.82rem; color: var(--text-dim); }
+    .cluster-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .mini-stat {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    .mini-stat-val { font-size: 1.1rem; font-weight: 700; }
+    .mini-stat-lbl { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); }
+
+    .claim-card {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.75rem;
+      margin-bottom: 0.6rem;
+      transition: border-color 0.2s;
+    }
+    .claim-card:hover { border-color: var(--accent); }
+    .claim-text { font-size: 0.82rem; margin-bottom: 0.4rem; line-height: 1.45; }
+    .claim-meta { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+    .tag {
+      display: inline-block;
+      padding: 0.12rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .tag-prop { background: rgba(63,185,80,0.12); color: var(--prop); }
+    .tag-opp  { background: rgba(248,81,73,0.12); color: var(--opp); }
+    .tag-survived { background: rgba(88,166,255,0.12); color: var(--accent); }
+    .tag-demolished { background: rgba(248,81,73,0.2); color: var(--opp); }
+    .tag-type { background: rgba(210,153,34,0.12); color: var(--gold); }
+
+    .point-detail { font-size: 0.82rem; margin-top: 0.5rem; }
+    .point-detail div { margin-bottom: 0.2rem; }
+    .point-detail b { color: var(--text-dim); }
+
+    .rebuttal-card {
+      background: var(--surface2);
+      border-left: 3px solid var(--opp);
+      border-radius: 0 6px 6px 0;
+      padding: 0.6rem 0.75rem;
+      margin-top: 0.5rem;
+      font-size: 0.78rem;
+    }
+    .rebuttal-card.demolition { border-left-color: #ff4040; }
+    .rebuttal-card .rb-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--opp);
+      margin-bottom: 0.2rem;
+    }
+    .rebuttal-card.demolition .rb-label { color: #ff4040; }
+
+    /* ── Secondary ───────────────────────── */
+    .secondary {
+      padding: 2.5rem 3rem;
+      border-top: 1px solid var(--border);
+      background: linear-gradient(180deg, var(--bg) 0%, #0f1923 100%);
+    }
+    .secondary h2 { font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 700; }
+    .charts-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .chart-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+    }
+    .chart-card h3 { font-size: 0.82rem; color: var(--text-dim); margin-bottom: 0.75rem; font-weight: 600; }
+
+    @media (max-width: 1000px) {
+      .main { grid-template-columns: 1fr; height: auto; }
+      .sidebar, .detail-panel { border: none; border-bottom: 1px solid var(--border); max-height: 50vh; }
+      .chart-area { height: 60vh; }
+      .charts-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Argument Landscape</h1>
+  <p class="subtitle">Cluster analysis of claims across simulated Cambridge Union debates</p>
+  <p class="motion" id="motionText"></p>
+  <div class="stats-bar" id="statsBar"></div>
+</div>
+
+<div class="main">
+
+  <!-- Left sidebar -->
+  <div class="sidebar">
+    <h3>Colour By</h3>
+    <div class="color-toggle" id="colorToggle">
+      <button class="color-btn active" data-mode="cluster">Cluster</button>
+      <button class="color-btn" data-mode="side">Side</button>
+      <button class="color-btn" data-mode="outcome">Outcome</button>
+      <button class="color-btn" data-mode="speaker">Speaker</button>
+      <button class="color-btn" data-mode="survived">Survived</button>
+      <button class="color-btn" data-mode="type">Type</button>
+      <button class="color-btn" data-mode="epoch">Epoch</button>
+    </div>
+
+    <h3>Cluster Edges</h3>
+    <div class="edge-controls">
+      <label><input type="checkbox" id="showEdges" checked> Show cross-cluster rebuttals</label>
+    </div>
+    <div class="edge-legend">
+      <div class="edge-legend-item">
+        <span class="edge-swatch" style="background:rgba(248,81,73,0.35)"></span> Rebuttal flow
+      </div>
+    </div>
+
+    <h3>Side</h3>
+    <div class="filter-group" id="sideFilters"></div>
+
+    <h3>Speaker</h3>
+    <div class="filter-group" id="speakerFilters"></div>
+
+    <h3>Claim Type</h3>
+    <div class="filter-group" id="typeFilters"></div>
+
+    <h3>Epoch</h3>
+    <div class="filter-group" id="epochFilters"></div>
+
+    <h3>Ensemble</h3>
+    <div class="filter-group" id="ensembleFilters"></div>
+
+    <h3>Clusters</h3>
+    <div id="clusterLegend"></div>
+  </div>
+
+  <!-- Center: 3D chart -->
+  <div class="chart-area">
+    <div id="scatterPlot" style="width:100%;height:100%"></div>
+    <div class="chart-hint">Drag to rotate · Scroll to zoom · Click a point for details · ◇ = cluster centroid</div>
+  </div>
+
+  <!-- Right: detail -->
+  <div class="detail-panel">
+    <h3>Details</h3>
+    <div id="detailContent">
+      <p class="empty-state">
+        <span class="icon">🔍</span>
+        Click a point on the 3D scatter to inspect a claim, or click a cluster in the legend to browse its members.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Secondary -->
+<div class="secondary">
+  <h2>Cross-Cluster Analysis</h2>
+  <div class="charts-row">
+    <div class="chart-card"><h3>Survival Rate by Cluster</h3><div id="survivalChart"></div></div>
+    <div class="chart-card"><h3>Win Correlation by Cluster</h3><div id="winChart"></div></div>
+  </div>
+  <div class="charts-row">
+    <div class="chart-card"><h3>Speaker Distribution</h3><div id="speakerChart"></div></div>
+    <div class="chart-card"><h3>Side Distribution by Cluster</h3><div id="sideChart"></div></div>
+  </div>
+</div>
+
+<script>
+const PALETTE = [
+  '#58a6ff','#3fb950','#f85149','#d29922','#bc8cff',
+  '#f778ba','#79c0ff','#56d364','#ff7b72','#e3b341',
+  '#d2a8ff','#ff9bce','#a5d6ff','#7ee787','#ffa198',
+  '#f0cc56','#cabfff','#ffb4d0','#c6e5ff','#aff5b4',
+  '#ff6961','#77dd77','#aec6cf','#fdfd96','#cfcfc4',
+  '#cb99c9','#c23b22','#b39eb5','#836953','#ffd1dc',
+  '#b19cd9','#03c03c','#ff6347','#779ecb','#f49ac2',
+  '#989898','#c39953','#6b5b95','#88b04b','#ff6f61',
+];
+const SPEAKER_COLORS = {};
+let DATA, colorMode = 'cluster';
+let showEdges = true;
+let activeFilters = {};
+
+fetch('viz_data.json').then(r=>r.json()).then(d=>{DATA=d;init()})
+  .catch(e=>{document.getElementById('scatterPlot').innerHTML='<p style="color:#f85149;padding:2rem">'+e.message+'</p>'});
+
+function init() {
+  const speakers = [...new Set(DATA.points.map(p=>p.speaker_name))].sort();
+  speakers.forEach((s,i)=>{SPEAKER_COLORS[s]=PALETTE[i%PALETTE.length]});
+
+  activeFilters = {
+    side: new Set(DATA.points.map(p=>p.side)),
+    speaker: new Set(DATA.points.map(p=>p.speaker_name)),
+    type: new Set(DATA.points.map(p=>p.claim_type)),
+    epoch: new Set(DATA.points.map(p=>String(p.epoch))),
+    ensemble: new Set(DATA.points.map(p=>p.ensemble)),
+  };
+
+  renderHeader();
+  renderFilters();
+  renderLegend();
+  renderScatter();
+  renderSecondary();
+
+  // Color toggle
+  document.querySelectorAll('.color-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.color-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      colorMode = btn.dataset.mode;
+      renderScatter();
+    });
+  });
+
+  // Edge toggles
+  document.getElementById('showEdges').addEventListener('change', e => {
+    showEdges = e.target.checked;
+    renderScatter();
+  });
+}
+
+function renderHeader() {
+  document.getElementById('motionText').textContent = '"' + DATA.meta.motion + '"';
+  const stats = [
+    ['n_claims','Claims'],['n_clusters','Clusters'],['n_runs','Runs'],['n_edges','Rebuttals']
+  ];
+  document.getElementById('statsBar').innerHTML = stats.map(([k,l])=>
+    `<div class="stat"><div class="stat-value">${DATA.meta[k]||0}</div><div class="stat-label">${l}</div></div>`
+  ).join('');
+}
+
+function renderFilters() {
+  const make = (id, vals, key) => {
+    const el = document.getElementById(id);
+    [...vals].sort().forEach(v=>{
+      const lbl = document.createElement('label');
+      const cb = document.createElement('input');
+      cb.type='checkbox'; cb.checked=true;
+      cb.addEventListener('change',()=>{
+        if(cb.checked) activeFilters[key].add(String(v));
+        else activeFilters[key].delete(String(v));
+        renderScatter();
+      });
+      lbl.appendChild(cb);
+      lbl.appendChild(document.createTextNode(' '+v));
+      el.appendChild(lbl);
+    });
+  };
+  make('sideFilters', new Set(DATA.points.map(p=>p.side)), 'side');
+  make('speakerFilters', new Set(DATA.points.map(p=>p.speaker_name)), 'speaker');
+  make('typeFilters', new Set(DATA.points.map(p=>p.claim_type)), 'type');
+  make('epochFilters', new Set(DATA.points.map(p=>String(p.epoch))), 'epoch');
+  make('ensembleFilters', new Set(DATA.points.map(p=>p.ensemble)), 'ensemble');
+}
+
+function renderLegend() {
+  const el = document.getElementById('clusterLegend');
+  Object.entries(DATA.clusters)
+    .map(([k,v])=>[parseInt(k),v])
+    .sort((a,b)=>(b[1].count||0)-(a[1].count||0))
+    .forEach(([cid,info])=>{
+      const color = cid===-1 ? '#555' : PALETTE[cid%PALETTE.length];
+      const div = document.createElement('div');
+      div.className='legend-item';
+      div.innerHTML=`<div class="legend-swatch" style="background:${color}"></div>
+        <div><span class="legend-name">${info.name||'Cluster '+cid}</span> <span class="legend-count">(${info.count||0})</span></div>`;
+      div.addEventListener('click',()=>showCluster(cid));
+      el.appendChild(div);
+    });
+}
+
+function isVisible(idx) {
+  const p = DATA.points[idx];
+  return activeFilters.side.has(p.side) &&
+         activeFilters.speaker.has(p.speaker_name) &&
+         activeFilters.type.has(p.claim_type) &&
+         activeFilters.epoch.has(String(p.epoch)) &&
+         activeFilters.ensemble.has(p.ensemble);
+}
+
+function filtered() {
+  return DATA.points.map((_,i)=>i).filter(isVisible);
+}
+
+function ptColor(p) {
+  switch(colorMode) {
+    case 'cluster': return p.cluster===-1?'#555':PALETTE[p.cluster%PALETTE.length];
+    case 'side': return p.side==='proposition'?'#3fb950':'#f85149';
+    case 'outcome': return p.side_won===true?'#3fb950':p.side_won===false?'#f85149':'#555';
+    case 'speaker': return SPEAKER_COLORS[p.speaker_name]||'#555';
+    case 'survived': return p.survived?'#58a6ff':'#f85149';
+    case 'type': return p.claim_type==='evidence_backed'?'#3fb950':p.claim_type==='principled'?'#d29922':'#555';
+    case 'epoch': return ['#58a6ff','#3fb950','#d29922','#f85149'][p.epoch-1]||'#555';
+    default: return '#555';
+  }
+}
+
+/* ── Compute cluster centroids ────────────── */
+function computeCentroids(visibleSet) {
+  const sums = {}; // cid -> {sx,sy,sz,n}
+  visibleSet.forEach(i => {
+    const p = DATA.points[i];
+    const c = p.cluster;
+    if (c === -1) return; // skip noise
+    if (!sums[c]) sums[c] = {sx:0,sy:0,sz:0,n:0};
+    sums[c].sx += p.x; sums[c].sy += p.y; sums[c].sz += p.z;
+    sums[c].n++;
+  });
+  const centroids = {};
+  for (const [c,s] of Object.entries(sums)) {
+    centroids[c] = { x: s.sx/s.n, y: s.sy/s.n, z: s.sz/s.n, n: s.n };
+  }
+  return centroids;
+}
+
+/* ── Aggregate edges between cluster pairs ── */
+function aggregateClusterEdges(visibleSet) {
+  if (!DATA.edges) return [];
+  const flows = {}; // "srcCluster->tgtCluster" -> {total, demolitions}
+  DATA.edges.forEach(e => {
+    if (!visibleSet.has(e.source) || !visibleSet.has(e.target)) return;
+    const sc = DATA.points[e.source].cluster;
+    const tc = DATA.points[e.target].cluster;
+    if (sc === -1 || tc === -1) return;
+    if (sc === tc) return; // skip intra-cluster
+    const key = sc + '->' + tc;
+    if (!flows[key]) flows[key] = { src: sc, tgt: tc, total: 0, demolitions: 0 };
+    flows[key].total++;
+    if (e.undermines) flows[key].demolitions++;
+  });
+  return Object.values(flows);
+}
+
+/* ── Build centroid edge traces ────────────── */
+function buildCentroidEdgeTraces(visibleSet) {
+  if (!showEdges) return { traces: [], centroidTrace: null };
+
+  const centroids = computeCentroids(visibleSet);
+  const flows = aggregateClusterEdges(visibleSet);
+  if (flows.length === 0) return { traces: [], centroidTrace: null };
+
+  const traces = [];
+  const lineX=[], lineY=[], lineZ=[];
+
+  flows.forEach(f => {
+    const s = centroids[f.src], t = centroids[f.tgt];
+    if (!s || !t) return;
+    lineX.push(s.x, t.x, null);
+    lineY.push(s.y, t.y, null);
+    lineZ.push(s.z, t.z, null);
+  });
+
+  if (lineX.length > 0) {
+    traces.push({
+      x: lineX, y: lineY, z: lineZ,
+      mode: 'lines', type: 'scatter3d',
+      line: { color: 'rgba(248,81,73,0.3)', width: 2 },
+      hoverinfo: 'none',
+      showlegend: false,
+    });
+  }
+
+  // Centroid markers with hover showing flow summary
+  const cX=[], cY=[], cZ=[], cText=[], cSize=[], cColor=[];
+  for (const [cid, cen] of Object.entries(centroids)) {
+    const info = DATA.clusters[String(cid)];
+    const name = info?.name || 'Cluster '+cid;
+
+    // Summarise incoming / outgoing flows
+    const incoming = flows.filter(f => String(f.tgt) === String(cid));
+    const outgoing = flows.filter(f => String(f.src) === String(cid));
+    const inTotal = incoming.reduce((s,f) => s+f.total, 0);
+    const outTotal = outgoing.reduce((s,f) => s+f.total, 0);
+    const inDem = incoming.reduce((s,f) => s+f.demolitions, 0);
+    const outDem = outgoing.reduce((s,f) => s+f.demolitions, 0);
+
+    cX.push(cen.x); cY.push(cen.y); cZ.push(cen.z);
+    cSize.push(Math.max(6, Math.min(16, 4 + cen.n * 0.3)));
+    cColor.push(parseInt(cid)===-1 ? '#555' : PALETTE[parseInt(cid)%PALETTE.length]);
+    cText.push(
+      `<b>${name}</b> (${cen.n} claims)<br>` +
+      `Attacked: ${inTotal}× (${inDem} demolitions)<br>` +
+      `Attacks out: ${outTotal}× (${outDem} demolitions)`
+    );
+  }
+
+  const centroidTrace = {
+    x: cX, y: cY, z: cZ,
+    mode: 'markers',
+    type: 'scatter3d',
+    marker: { color: cColor, size: cSize, opacity: 0.9,
+              line: { width: 1, color: 'rgba(255,255,255,0.4)' },
+              symbol: 'diamond' },
+    text: cText,
+    hoverinfo: 'text',
+    showlegend: false,
+  };
+
+  return { traces, centroidTrace };
+}
+
+function renderScatter() {
+  const idx = filtered();
+  const visibleSet = new Set(idx);
+  const pts = idx.map(i=>DATA.points[i]);
+
+  const pointTrace = {
+    x: pts.map(p=>p.x),
+    y: pts.map(p=>p.y),
+    z: pts.map(p=>p.z),
+    mode: 'markers',
+    type: 'scatter3d',
+    marker: {
+      color: pts.map(p=>ptColor(p)),
+      size: 4,
+      opacity: 0.85,
+    },
+    text: pts.map(p=>{
+      const t = p.claim_text.length>70 ? p.claim_text.slice(0,67)+'...' : p.claim_text;
+      return `<b>${p.cluster_name}</b><br>${t}<br><i>${p.speaker_name}</i> (${p.side})`;
+    }),
+    hoverinfo: 'text',
+    customdata: idx,
+    showlegend: false,
+  };
+
+  const { traces: edgeTraces, centroidTrace } = buildCentroidEdgeTraces(visibleSet);
+
+  const allTraces = [...edgeTraces, pointTrace];
+  if (centroidTrace) allTraces.push(centroidTrace);
+
+  const layout = {
+    paper_bgcolor: '#0a0e14',
+    scene: {
+      bgcolor: '#0a0e14',
+      xaxis: { showgrid: true, gridcolor: '#151d28', showticklabels: false, title: '', zeroline: false, gridwidth: 1 },
+      yaxis: { showgrid: true, gridcolor: '#151d28', showticklabels: false, title: '', zeroline: false, gridwidth: 1 },
+      zaxis: { showgrid: true, gridcolor: '#151d28', showticklabels: false, title: '', zeroline: false, gridwidth: 1 },
+      camera: { eye: { x: 1.5, y: 1.5, z: 1.2 } },
+      aspectmode: 'cube',
+    },
+    margin: { t: 0, r: 0, b: 0, l: 0 },
+    showlegend: false,
+    hovermode: 'closest',
+  };
+
+  const config = {
+    responsive: true,
+    displayModeBar: true,
+    modeBarButtonsToRemove: ['toImage','sendDataToCloud'],
+    displaylogo: false,
+  };
+
+  Plotly.newPlot('scatterPlot', allTraces, layout, config);
+
+  // Click only updates the detail panel — no 3D re-render
+  document.getElementById('scatterPlot').on('plotly_click', function(ev) {
+    if(ev.points.length>0 && ev.points[0].customdata !== undefined) {
+      showPoint(ev.points[0].customdata);
+    }
+  });
+}
+
+/* ── Detail panel (no 3D manipulation) ────── */
+function showPoint(idx) {
+  const p = DATA.points[idx];
+
+  const incoming = (DATA.edges||[]).filter(e => e.source === idx);
+  const outgoing = (DATA.edges||[]).filter(e => e.target === idx);
+
+  let rebuttalsHtml = '';
+
+  if (incoming.length > 0) {
+    rebuttalsHtml += `<h3 style="margin-top:1rem">Rebuttals Against This Claim (${incoming.length})</h3>`;
+    incoming.forEach(e => {
+      const rebutter = DATA.points[e.target];
+      rebuttalsHtml += `<div class="rebuttal-card ${e.undermines?'demolition':''}">
+        <div class="rb-label">${e.undermines?'💥 Demolition':'⚔️ Rebuttal'} · ${e.method||''}</div>
+        <div>${e.summary||''}</div>
+        <div style="margin-top:0.25rem;color:var(--text-dim);font-size:0.72rem">by ${rebutter?rebutter.speaker_name:'Unknown'}</div>
+      </div>`;
+    });
+  }
+
+  if (outgoing.length > 0) {
+    rebuttalsHtml += `<h3 style="margin-top:1rem">This Speaker Rebuts (${outgoing.length})</h3>`;
+    outgoing.forEach(e => {
+      const attacked = DATA.points[e.source];
+      rebuttalsHtml += `<div class="rebuttal-card ${e.undermines?'demolition':''}">
+        <div class="rb-label">${e.undermines?'💥 Demolition':'⚔️ Rebuttal'} · ${e.method||''}</div>
+        <div>${e.summary||''}</div>
+        <div style="margin-top:0.25rem;color:var(--text-dim);font-size:0.72rem">targeting: ${attacked?(attacked.claim_text||'').slice(0,80)+'...':'Unknown'}</div>
+      </div>`;
+    });
+  }
+
+  if (incoming.length === 0 && outgoing.length === 0) {
+    rebuttalsHtml = `<p style="color:var(--text-dim);font-size:0.82rem;margin-top:1rem">No rebuttal edges connected to this claim.</p>`;
+  }
+
+  document.getElementById('detailContent').innerHTML = `
+    <div class="claim-card">
+      <div class="claim-text">${p.claim_text}</div>
+      <div class="claim-meta">
+        <span class="tag ${p.side==='proposition'?'tag-prop':'tag-opp'}">${p.side}</span>
+        <span class="tag tag-type">${p.claim_type}</span>
+        ${p.survived?'<span class="tag tag-survived">survived</span>':'<span class="tag tag-demolished">contested</span>'}
+      </div>
+    </div>
+    <div class="point-detail">
+      <div><b>Speaker:</b> ${p.speaker_name}</div>
+      <div><b>Cluster:</b> ${p.cluster_name}</div>
+      <div><b>Run:</b> ${p.run_number} · Epoch ${p.epoch}</div>
+      <div><b>Ensemble:</b> ${p.ensemble}</div>
+      <div><b>Winner:</b> ${p.winner} (${p.margin})</div>
+      <div><b>Side won:</b> ${p.side_won===null?'N/A':(p.side_won?'✓ Yes':'✗ No')}</div>
+      <div><b>Edges:</b> ${incoming.length} incoming · ${outgoing.length} outgoing</div>
+    </div>
+    ${rebuttalsHtml}`;
+}
+
+function showCluster(cid) {
+  const info = DATA.clusters[String(cid)];
+  const members = DATA.points.filter(p=>p.cluster===cid);
+  const n = info.count||members.length;
+  const wr = ((info.win_rate||0)*100).toFixed(0);
+  const sr = ((info.survival_rate||0)*100).toFixed(0);
+  const pf = ((info.prop_fraction||0)*100).toFixed(0);
+
+  // Count edges involving this cluster
+  const clusterIndices = new Set(DATA.points.map((p,i)=>p.cluster===cid?i:-1).filter(i=>i>=0));
+  const inEdges = (DATA.edges||[]).filter(e => clusterIndices.has(e.source));
+  const outEdges = (DATA.edges||[]).filter(e => clusterIndices.has(e.target));
+  const demolitions = inEdges.filter(e => e.undermines);
+
+  let html = `
+    <div class="cluster-header">
+      <h2>${info.name||'Cluster '+cid}</h2>
+      <p class="desc">${info.description||''}</p>
+    </div>
+    <div class="cluster-stats">
+      <div class="mini-stat"><div class="mini-stat-val">${n}</div><div class="mini-stat-lbl">Claims</div></div>
+      <div class="mini-stat"><div class="mini-stat-val" style="color:${parseInt(wr)>=50?'var(--prop)':'var(--opp)'}">${wr}%</div><div class="mini-stat-lbl">Win Rate</div></div>
+      <div class="mini-stat"><div class="mini-stat-val" style="color:var(--accent)">${sr}%</div><div class="mini-stat-lbl">Survival</div></div>
+      <div class="mini-stat"><div class="mini-stat-val">${pf}/${100-parseInt(pf)}</div><div class="mini-stat-lbl">Prop / Opp</div></div>
+      <div class="mini-stat"><div class="mini-stat-val">${inEdges.length}</div><div class="mini-stat-lbl">Times Rebutted</div></div>
+      <div class="mini-stat"><div class="mini-stat-val" style="color:${demolitions.length>0?'var(--opp)':'var(--text)'}">${demolitions.length}</div><div class="mini-stat-lbl">Demolitions</div></div>
+    </div>
+    <h3>Sample Claims (${Math.min(8,members.length)} of ${members.length})</h3>`;
+
+  members.slice(0,8).forEach(p=>{
+    html += `<div class="claim-card">
+      <div class="claim-text">${p.claim_text}</div>
+      <div class="claim-meta">
+        <span class="tag ${p.side==='proposition'?'tag-prop':'tag-opp'}">${p.side}</span>
+        <span class="tag tag-type">${p.claim_type}</span>
+        ${p.survived?'<span class="tag tag-survived">survived</span>':'<span class="tag tag-demolished">contested</span>'}
+      </div>
+    </div>`;
+  });
+  document.getElementById('detailContent').innerHTML = html;
+}
+
+/* ── Secondary charts ────────────────────── */
+function renderSecondary() {
+  const cl = Object.entries(DATA.clusters).map(([k,v])=>[parseInt(k),v]).filter(([k])=>k!==-1)
+    .sort((a,b)=>(b[1].count||0)-(a[1].count||0)).slice(0,20);
+
+  const names = cl.map(([,v])=>v.name||'?');
+  const colors = cl.map(([k])=>PALETTE[k%PALETTE.length]);
+  const base = {
+    paper_bgcolor:'#12171f', plot_bgcolor:'#12171f',
+    font:{color:'#7b8da0',size:10},
+    margin:{t:10,r:15,b:100,l:50},
+    xaxis:{tickangle:-45,gridcolor:'#243044',color:'#7b8da0'},
+    yaxis:{gridcolor:'#243044',color:'#7b8da0'},
+    height:300,
+  };
+
+  Plotly.newPlot('survivalChart',[{x:names,y:cl.map(([,v])=>((v.survival_rate||0)*100)),type:'bar',marker:{color:colors,opacity:0.85}}],
+    {...base,yaxis:{...base.yaxis,title:'Survival %',range:[0,100]}},{responsive:true,displayModeBar:false});
+
+  Plotly.newPlot('winChart',[{x:names,y:cl.map(([,v])=>(((v.win_rate||0.5)-0.5)*100)),type:'bar',
+    marker:{color:cl.map(([,v])=>(v.win_rate||0.5)>=0.5?'#3fb950':'#f85149'),opacity:0.85}}],
+    {...base,yaxis:{...base.yaxis,title:'Win rate vs 50%',zeroline:true,zerolinecolor:'#58a6ff'}},{responsive:true,displayModeBar:false});
+
+  const allSpk = [...new Set(DATA.points.map(p=>p.speaker_name))].sort();
+  Plotly.newPlot('speakerChart',allSpk.map(s=>({x:names,y:cl.map(([cid])=>DATA.points.filter(p=>p.cluster===cid&&p.speaker_name===s).length),
+    name:s,type:'bar',marker:{color:SPEAKER_COLORS[s],opacity:0.85}})),
+    {...base,barmode:'stack',yaxis:{...base.yaxis,title:'Claims'},showlegend:true,legend:{font:{size:8,color:'#7b8da0'},orientation:'h',y:-0.55}},{responsive:true,displayModeBar:false});
+
+  Plotly.newPlot('sideChart',[
+    {x:names,y:cl.map(([,v])=>((v.prop_fraction||0)*100)),name:'Proposition',type:'bar',marker:{color:'#3fb950',opacity:0.85}},
+    {x:names,y:cl.map(([,v])=>((1-(v.prop_fraction||0))*100)),name:'Opposition',type:'bar',marker:{color:'#f85149',opacity:0.85}},
+  ],{...base,barmode:'stack',yaxis:{...base.yaxis,title:'%',range:[0,100]},showlegend:true,legend:{font:{size:9,color:'#7b8da0'}}},{responsive:true,displayModeBar:false});
+}
+</script>
+
+</body>
+</html>

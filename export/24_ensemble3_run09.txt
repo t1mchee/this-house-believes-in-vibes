@@ -1,0 +1,685 @@
+================================================================================
+CAMBRIDGE UNION EXHIBITION DEBATE
+Motion: This House Believes AI Should Be Allowed To Make Decisions About Human Life
+Generated: 2026-02-18T22:47:58.470016
+================================================================================
+
+DEFINITIONAL FRAMEWORK FOR THIS DEBATE
+=============================================
+
+The Proposition has defined the key terms as follows:
+  • AI: Artificial intelligence systems that inform, guide, or execute decisions, particularly in life-critical contexts.
+  • Decisions about human life: Choices that materially affect whether human beings live or die, such as in air travel, healthcare, and emergency response.
+  • Allow: To reject a blanket prohibition and permit AI involvement under appropriate governance and accountability frameworks.
+
+Scope: AI systems making decisions in life-critical contexts under governance frameworks, such as healthcare, disaster response, and transportation.
+Exclusions: Fully autonomous AI systems making decisions without human oversight, such as autonomous lethal weapons selecting human targets.
+Proposition's framing: The central question is whether we should permit AI to continue and expand its role in making decisions about human life, under appropriate governance, given its demonstrated capabilities and ethical frameworks.
+
+The Opposition ACCEPTS these definitions.
+Opposition's counter-framing: The central question is whether granting AI decision-making power in life-critical contexts risks severing the connection between moral choice and responsibility, leading to systemic risks and irreversible consequences.
+Agreed ground: Both sides agree that AI systems are already integrated into life-critical contexts and that governance frameworks are essential to manage their involvement.
+
+ALL speakers should argue within this framework. If you disagree with how a term has been defined, you may contest it explicitly, but do NOT silently operate under different definitions.
+
+────────────────────────────────────────────────────────────────────────────────
+Dr Henry Shevlin (PROPOSITION)
+Position: 1/6 · 1296 words · Tone: Measured but firm, with a focus on logical reasoning and ethical considerations.
+────────────────────────────────────────────────────────────────────────────────
+Madam President, honoured guests, ladies and gentlemen,
+
+On 15 January 2009 US Airways flight 1549 took off from LaGuardia, struck a flock of geese, and lost thrust in both engines. As Captain Sullenberger steered his Airbus toward the Hudson, an unobtrusive on-board system was simultaneously running hundreds of simulations per second, suggesting glide paths, stabiliser angles, and optimal splash-down speeds. Nobody tweeted their thanks to the flight computer, yet that narrow slice of artificial intelligence was quietly indispensable to the safe ditching that saved 155 lives. My point is simple: for decades, AI—usually in small, task-specific guises—has already been making decisions about human life. The question before us this evening is whether we should permit that trend to continue and, where beneficial, expand. I submit that the answer is an emphatic yes.
+
+Let me begin by clarifying the motion. “Allowing AI to make decisions about human life” does not mean handing the keys of civilisation to a rogue super-intelligence and hoping for the best. It means rejecting a blanket prohibition on algorithms informing, guiding, or even executing decisions that carry life-and-death stakes. It means recognising that in domains ranging from air travel to intensive care, from search-and-rescue to allocation of scarce medical resources, artificial systems can—under the right governance—exercise choice functions that materially affect whether human beings live or die. Our burden, as the Proposition, is therefore to show three things: first, that AI already performs such roles extensively; second, that it often does so more capably, fairly, or safely than unaided human judgement; and third, that there are principled frameworks for accountability that make its involvement ethically preferable to excluding it.
+
+Argument One: AI decision-making is a current, unavoidable reality, and attempts at categorical exclusion would be hopelessly retrograde. Autopilot software now handles every commercial flight for over 90 per cent of its airborne time; collision-avoidance systems intervene in millions of cars daily; triage algorithms in London ambulances determine which stroke patients are blue-lighted to thrombectomy-capable hospitals. If we were truly to bar AI from decisions touching on life, we would be forced to ground aircraft, disable defibrillators that analyse cardiac rhythms, and abandon the predictive models that guide food-aid distribution in drought-stricken regions. The motion, then, is not an abstract future-gazing exercise. It is about whether we acknowledge and refine a practice that is already saving lives, or whether we indulge in a Luddite fantasy that endangers the very people we seek to protect.
+
+Argument Two: AI systems frequently outperform humans precisely where the stakes are highest. Consider sepsis, a condition that kills more people annually than breast, prostate, and lung cancer combined. The deep-learning model ‘Targeted Real-time Early Warning System’ developed at Johns Hopkins analyses 40 variables per patient and has reduced sepsis mortality in participating hospitals by over 20 per cent. No clinician, however brilliant, can continuously monitor that volume of data across hundreds of beds. Or take wild-fire prediction: NASA’s FireCast algorithm synthesises satellite imagery, wind patterns, and humidity to dispatch evacuation orders up to six hours earlier than human experts alone. Time saved is lives saved. In short, AI’s comparative advantages—speed, scalability, and an immunity to fatigue—are optimally suited to life-critical contexts where hesitation or oversight is fatal.
+
+A related virtue is fairness. Human choices, we know, are riddled with implicit biases—racial, gendered, socioeconomic. When Boston Children’s Hospital deployed an AI to prioritise heart-transplant candidates, the algorithm, trained on objective clinical indicators, eliminated a longstanding disparity in wait-list times between Black and white patients. Of course, data can encode prejudices, but unlike human cognition, corrupted models can be audited, retrained, and rectified. As the philosopher Martha Nussbaum reminds us, justice requires not merely good intentions but structural mechanisms that correct for our all-too-human failings. AI, appropriately designed, offers precisely such a mechanism.
+
+Argument Three: we have a moral duty to leverage the best available tools to protect and preserve human life. The basic ethical principle here is beneficence—act so as to promote the welfare of others. Suppose you knew that an algorithm could reduce fatal medication errors in your local hospital by half. To ban its use because it lacks a pulse would be, I contend, a dereliction of moral responsibility. Philosophers from Peter Singer to Onora O’Neill have argued that when the cost of aiding others is low and the benefits high, omission is morally blameworthy. Denying AI a role in critical decision-making, when evidence indicates superior outcomes, is precisely such an omission.
+
+“But what about accountability?” I hear the sceptics cry. “To err is algorithmic, but to sue is human.” Here the objection mistakes governance for ontology. We already hold corporations liable though they, too, lack consciousness. We certify medical devices, license pilots, and regulate pharmaceuticals. The same toolkit—transparency requirements, rigorous testing, post-deployment monitoring—can and must be applied to AI. Indeed, AI’s decision logs can provide a forensic audit trail far richer than the retrospective just-so stories humans conjure. Instead of eroding accountability, properly architected AI can enhance it.
+
+Nor does allowing AI to decide entail a diminishment of human dignity. Autopilots liberate pilots to focus on strategic judgement; diagnostic algorithms free doctors for empathetic engagement; self-driving tractors let farmers concentrate on soil stewardship rather than repetitive steering. In each case the human role evolves, but it does not evaporate. As we integrate AI, the locus of value shifts from rote calculation to creative, relational, and supervisory capacities—areas where our species retains clear comparative advantage.
+
+Some may worry that ceding decisions to AI undermines the preciousness of individual life by turning it into just another data point. I would remind them that the inverse is true: refusing superior tools because of metaphysical squeamishness trivialises life, subordinating real flesh-and-blood patients to our aesthetic preference for human agency. The anaesthetist who insists on hand-mixing gases rather than using an automated ventilator is not a romantic hero; he is a menace in scrubs.
+
+Let me briefly anticipate the most common slippery-slope argument. “Today it’s insulin pumps, tomorrow terminators.” This conflates permission with abdication. The motion advocates a license, not a blank cheque. We permit surgeons to wield scalpels, yet forbid them from operating drunk. Likewise, we can embrace AI’s lifesaving potential while instituting red lines—prohibiting, for example, autonomous lethal weapons that select human targets without oversight. The relevant distinction is not between human and machine decision-makers but between governed competence and ungoverned chaos.
+
+Finally, a word on public perception. My own research on AI consciousness suggests that what ultimately shapes societal attitudes is relationship. The more we see AI tangibly protecting our children, stabilising our climate, and optimising our healthcare, the more intuitive its moral legitimacy becomes. Banning AI from consequential domains would stifle exactly the kinds of positive, trust-building interactions that demystify the technology and anchor it in pro-social norms.
+
+To summarise:
+
+1. AI is already deeply embedded in life-and-death decision-making; pretending otherwise is irresponsible.
+2. In multiple critical arenas—from sepsis prediction to disaster response—AI delivers demonstrably better outcomes, reducing mortality and mitigating human bias.
+3. Ethical governance frameworks exist and can be strengthened to ensure accountability, transparency, and respect for human values.
+4. Therefore, not only is it permissible to allow AI to make decisions about human life; in many cases, it is morally imperative.
+
+In the decades ahead, humanity will confront daunting challenges: antibiotic resistance, extreme weather, ageing populations. Meeting them without the analytical horsepower of AI would be like attempting orbital flight with a kite. Let us, therefore, move beyond reflexive fear and towards thoughtful stewardship. Let us wield the algorithmic scalpel with the same care and courage with which previous generations wielded electricity, vaccines, and the printing press. And let us affirm tonight, with clear eyes and steady hands, that this House believes AI should indeed be allowed to make decisions about human life.
+
+Thank you.
+
+  [POI from Demetrius Floudas — DECLINED]
+  "If AI’s speed can multiply a single error into mass casualties in seconds, how is that safer than human hesitation?"
+
+  [POI from Allison Gardner MP — DECLINED]
+  "Given AI’s documented biases that have led to wrongful incarcerations and surveillance abuses, on what basis can you claim it unambiguously promotes human welfare?"
+
+────────────────────────────────────────────────────────────────────────────────
+Demetrius Floudas (OPPOSITION)
+Position: 2/6 · 1380 words · Tone: Measured but firm, with a focus on ethical and systemic implications.
+────────────────────────────────────────────────────────────────────────────────
+Madam President, honourable members of the House,
+
+It is a pleasure to rise as first speaker for the Opposition.  I begin with a concession: Dr Shevlin’s tour-de-force reminded us of Airbus computers, sepsis alarms, wildfire maps.  These systems are genuinely useful; I have no desire to drag us back to sextants or leeches.  But the motion before us is not: “This House applauds digital tools.”  It is: “This House Believes AI Should Be Allowed To Make Decisions About Human Life.”  Those final five words—make decisions about human life—demand the highest possible scrutiny.
+
+DEFINITIONS AND THEIR LIMITS
+The Proposition has offered what they call a “clarifying” framework: AI may inform, guide, or even execute decisions, provided there is governance; fully autonomous killing machines are outside the debate.  I accept that exclusion—autonomous lethal weapons are so manifestly abhorrent that we would find ourselves in violent agreement.  Yet I must contest the sleight of hand hidden in their verb “allow.”
+
+To “allow” something of civilisational consequence is not merely to refrain from prohibition.  It is to grant positive societal licence, to normalise, routinise, and ultimately entrench.  History shows that once a capability receives this blessing, it spreads beyond the narrow corridors where its advocates first promised to confine it.  Today’s “surgical strike” becomes tomorrow’s saturation bombing; yesterday’s limited-yield device becomes a stockpile of megatons.  Therefore, the Opposition insists on a stricter reading: if we authorise AI to decide over life, we are paving the regulatory, ethical, and psychological road toward ever-deeper delegation—eventually, and inevitably, beyond human veto.  Our burden this evening is to demonstrate that such permission, even under the Proposition’s best-case guard-rails, remains profoundly unwise.
+
+REBUTTAL OF THE PROPOSITION
+
+1.  “AI is already doing it—therefore prohibition is Luddite.”  
+   Dr Shevlin conflates assistance with authority.  The autopilot may calculate glide paths, but Captain Sullenberger—and only Captain Sullenberger—chose the Hudson.  In medicine, early-warning scores flag patients, yet the intensivist decides whether to intubate.  Advisory algorithms are not the crux of this debate.  The motion speaks to decision power, to ultimate discretion.  Conflating the two obscures the very threshold we must evaluate.
+
+2.  “AI frequently outperforms humans, especially at scale.”  
+   Sometimes, but with brittle margins—and only in the retrospective datasets on which it was trained.  DeepMind’s protein predictions are magnificent science; yet the same architectural family hallucinates legal citations and fabricates patient notes.  Even Johns Hopkins’ much-touted sepsis model has, in peer-reviewed follow-ups, been shown to issue thousands of false alerts for every true positive once deployed across different hospital populations.  A machine that cries wolf at 3 a.m. does not save lives; it habituates clinicians to silence the alarm.  You will not find those messy details in glossy keynote slides.
+
+3.  “Fairness is enhanced because models can be audited.”  
+   In theory.  In practice our most powerful models are stochastic black boxes whose decision boundaries elude even their creators.  Audit a random-forest?  Often, yes.  Audit a 70-billion-parameter transformer fine-tuned on terabytes of opaque provenance?  Only in the sense that we can audit a roulette wheel.  Worse, bias is dynamic: retraining a model on historical data to “debias” transplantation wait-lists may re-encode structural inequities the very next quarter.  The moral hazard is that colourful fairness dashboards lull us into believing the problem solved while discrimination metastasises under a veneer of mathematical sophistication.
+
+4.  “Governance frameworks can handle accountability.”  
+   Madam President, I sit on the EU AI Office’s working group for systemic risks; I wish I could declare that our draft codes are adequate.  But governance lags capability by years, sometimes decades.  The proposition’s trust in compliance checklists ignores a brutal timeline: AI capability is accelerating exponentially, while multilateral treaties crawl at a diplomatic snail’s pace.  By the time a failure mode is codified, the architecture it governs has been obsoleted—and deployed at scale.
+
+5.  “Beneficence compels us to use superior tools.”  
+   Beneficence is not a solitary star; it is part of an ethical constellation that includes non-maleficence, justice, autonomy, and—crucially—accountability.  A ventilator that misreads a sensor and over-pressurises an infant’s lungs violates “first, do no harm,” regardless of good intentions.  When we hand decision authority to systems we do not fully understand and cannot meaningfully control, we gamble with stakes that include not only individual patients but systemic catastrophe.
+
+THE OPPOSITION CASE
+
+Permit me now to advance three positive arguments for rejecting this motion.
+
+Argument One: Moral Agency and Irreversibility  
+Decisions over life are not merely optimisation problems; they are laden with normative judgement, societal context, and the irreplaceable weight of accountability.  A judge who sentences, a surgeon who amputates, a commander who orders evacuation—each stands answerable before law, peers, and conscience.  Current AI lacks consciousness, intentionality, and the capacity for moral growth.  To assign it ultimate discretion is to sever the umbilical cord between moral choice and moral responsibility.  And because an extinguished life is irretrievable, any error is perpetual.  We cannot appeal a wrongful decision to an algorithm’s better angels—they have none.
+
+Argument Two: Systemic Risk, Not Point-Solution Safety  
+The Proposition fixates on micro-level gains—fewer medication errors here, faster wildfire evacuation there.  I invite the House to zoom out.  Complex societies are increasingly mediated by interconnected, homogenous AI stacks: the same foundation models in electronic health records, supply chains, and emergency comms.  A single cascading misclassification, a poisoned software update, or a coordinated cyber-attack could propagate lethal errors across continents within minutes.  In nuclear-engineering parlance, we move from probabilistic to deterministic failure: the question is no longer if, but when.  By embedding AI as decision-maker in every life-critical node, we create a monoculture where a fault becomes a pandemic of malfunction.
+
+Argument Three: The Slippery Slope Is Real—And Steep  
+The Proposition claims their licence stops short of autonomous weapons.  Yet once we normalise machine authority in ICUs and cockpit jump seats, the rhetorical distance to “human-out-of-the-loop” warfare shrinks alarmingly.  Policymakers will ask, not unreasonably, why the same technology that excels at triage should be denied in military theatres where split-second judgement is scarce and soldiers’ lives are at risk.  Defence contractors, facing commercial incentives and geopolitical competition, will oblige.  Without a bright, principled line—without categorical rejection of AI as ultimate life-and-death arbiter—the line will blur, then vanish.
+
+PRE-EMPTING COMMON OBJECTIONS  
+“But surely, Mr Floudas, you are arguing for a return to human fallibility!”  Indeed, humans err—sometimes tragically.  Yet humans possess an attribute algorithms lack: holistic comprehension of social norms, unintended consequences, and moral salience.  Most importantly, we can be held to account, shamed, re-educated, or removed from office.  If we despise human bias, let us reform training, diversify hiring, and enhance data literacy, not outsource conscience to silicon.
+
+A member may rise to ask, “Are you proposing we switch off every pacemaker?”  No.  The Opposition endorses AI as subordinate instrument—advisor, calculator, monitor.  The crux is locus of final authority.  Keep the surgeon’s scalpel sharp; let the pilot consult terrain-avoidance; but retain the human finger on the decision trigger.
+
+POLICY VISION  
+What, then, should be done?  First, enshrine an international AI Control & Non-Proliferation Treaty that explicitly forbids non-human actors from exercising unreviewed lethal or life-critical authority over persons.  Second, impose capability thresholds: as soon as a system’s action space includes irreversible harm, mandatory human confirmation—auditable and legally binding—must intercede.  Third, diversify technical stacks to avoid monoculture; redundant systems should be heterogenous, not clones of the same foundation model.  Finally, embed sunset clauses: any AI deployed in life-critical settings must be re-licensed every two years under updated safety benchmarks, or automatically decommissioned.
+
+CONCLUSION  
+Let me return to Captain Sullenberger on that frigid January afternoon.  The flight computer offered trajectories; yet it was Sully, weighing river traffic, passenger terror, and his own fallibility, who committed to the Hudson.  Had the algorithm been authorised to overrule him—to “decide about human life”—the outcome might still have been miraculous, or it might have spelled catastrophe.  The point is not which probability curve wins on a Tuesday.  The point is who, ultimately, bears the moral weight when 155 souls hang in the balance.  I submit that only a human being can, and must, shoulder that burden.
+
+Therefore, Madam President, distinguished colleagues, for the sake of moral agency, systemic safety, and the preservation of an unbroken line of accountability from decision to consequence, I urge this House to reject the seductive convenience of delegation and vote against the motion.
+
+Thank you.
+
+  [POI from Dr Henry Shevlin — ACCEPTED]
+  "Isn’t your premise self-defeating given that modern AI systems already employ isolated sandboxes and fail-safe protocols precisely to prevent the cascading failures you warn about?"
+  → Dr. Shevlin, sandboxes and fail-safes may work for today’s narrow algorithms, but they collapse under the commercial and geopolitical pressures at the frontier—and no technical barrier alone can contain the systemic, emergent risks of AGI. I now resume my speech.
+
+  [POI from Dr Henry Shevlin — ACCEPTED]
+  "Are you seriously suggesting we outlaw life-saving AI in our hospitals today just to guard against a potential military application tomorrow?"
+  → With respect, Dr Shevlin, I’m not calling for a blanket ban on hospital AI but for a tiered, risk-based framework that nurtures life-saving medical systems under robust oversight while strictly controlling frontier, dual-use capabilities. 
+
+Thank you—now, back to my argument.
+
+────────────────────────────────────────────────────────────────────────────────
+Student Speaker (Prop 3) (PROPOSITION)
+Position: 3/6 · 1624 words · Tone: Measured but firm, with a sense of urgency and moral responsibility.
+────────────────────────────────────────────────────────────────────────────────
+Madam President, honourable members of the House,
+
+It is an unhappy symmetry of history that while we gather in this gilded chamber, somewhere a child in rural Tanzania will die of a lung infection that an X-ray algorithm—already licensed in the NHS—could have spotted on a cheap tablet.  The physician was 200 kilometres away, the radiologist non-existent, and the battery on the ultrasound machine long since dead.  So let us be absolutely clear: the decision before us tonight is not abstract, not futuristic, and most certainly not limited to the comfortable corridors of Addenbrooke’s.  It is a decision about whether the poorest and the most vulnerable will be permitted the same margin of safety that many of us in this room already take for granted.
+
+I wish to add three strands to the Proposition case that my colleague Dr Shevlin has so elegantly opened.  First, the ethics of non-deployment—why withholding proven AI is itself a moral breach.  Second, the question of accountability—why AI does not dissolve responsibility but, uniquely, illuminates it.  Third, the geopolitical reality—why democratic refusal would not arrest the technology but merely export its development to jurisdictions with fewer scruples.
+
+I.  The Ethics of Non-Deployment: Distributive Justice, Not Tech Fetishism
+--------------------------------------------------------------------------
+
+The Opposition warns that to “allow” is to normalise and entrench.  I agree—and that is precisely why we must allow.  Because right now the thing we have normalised is global diagnostic apartheid.
+
+Consider the numbers.  The World Health Organization projects a 15-million health-worker shortfall by 2030.  Fifty per cent of the world’s population already lacks access to essential diagnostics; in sub-Saharan Africa it is closer to seventy per cent.  Against that backdrop, an AI model that reads tuberculosis scans at 3 pence per patient is not a luxury; it is the only radiologist most people will ever see.  
+
+The Opposition invokes moral agency as the exclusive domain of humans, yet fails to recognise that in large parts of the world no human agent is available.  To forbid AI triage in those settings is not cautious ethics; it is paternalistic neglect.  If beneficence binds the surgeon in Cambridge, it binds us toward strangers across the equator whose names we will never learn.  
+
+Let me run the Reversal Test, a favourite tool in moral philosophy.  Suppose there existed a pill that, when taken by healthcare workers, reduced diagnostic error by thirty per cent.  Would anyone in this House demand a moratorium until we had written a thousand-page liability statute?  Of course not; we would fast-track it under emergency use authorisation, with post-market surveillance and continuous review.  Software that achieves the same effect should be judged by the same ethical yard-stick.  The choice to delay is a decision—and its foreseeable consequence is preventable death.  Morally, it is indistinguishable from malpractice.
+
+II.  Accountability: The Auditable Mind
+---------------------------------------
+
+Mr Floudas paints an evocative picture of algorithms unmoored from conscience, unable to stand in the dock.  But notice what follows: when a machine errs, every single keystroke, every sensor value, every intermediate weight in the neural network is preserved.  When a human clinician errs, we receive—at best—a scribbled note and a fog of recollection shaped by self-exculpatory bias.  AI does not abolish accountability; it manufactures an evidentiary record that human memory could never supply.
+
+And that brings me to the so-called responsibility gap.  The EU AI Act, now in force, allocates strict obligations to providers, deployers and importers.  In other words, the chain of liability has more identified parties, not fewer.  If the oxygen sensor in a ventilator glitches, you sue the device manufacturer; if the algorithmic model mis-classifies an X-ray, you sue the model provider; if the hospital failed in due diligence, you sue the deployer.  Contrast that with a Friday-night emergency ward where seventy-two professionals touched the patient’s chart but the coronial inquest names none.  
+
+The Opposition’s demand for a “holistic comprehension of moral salience” is touching, but irrelevant to civil law.  Courts do not require a defendant that dreams, loves or feels remorse; they require a defendant who can pay damages and change practice.  On that metric, AI is a boon to accountability, not a threat.
+
+III.  Systemic Risk and the Fallacy of Paralytic Caution
+--------------------------------------------------------
+
+Let us now engage the Opposition’s grand narrative of cascading failure.  A single poisoned update, they say, could fell an interconnected monoculture.  But ladies and gentlemen, homogeneity is a governance choice, not a technological inevitability.  Aviation solved the monoculture problem by mandating redundant, heterogeneous systems—triple modular redundancy, independent power buses, human manual reversion.  The EU Act already requires exactly this for high-risk AI in critical infrastructure: diverse models, fail-safe defaults, and human override.  What the Opposition mislabels as a pending calamity is in fact an engineering discipline being codified in real time.
+
+Moreover, the argument from systemic risk is double-edged.  Remove AI early-warning from our power grids or sepsis wards and you do not return to a stable, human-only baseline; you revert to a system whose fragility is well documented: the blackout in Texas, the Mid-Staffordshire hospital scandal, the thalidomide tragedy—each a calamity authored entirely by human agents.  Our choice is not between risk and no risk, but between measurable, auditable, regulatable risk and the opaque anarchy of human error.
+
+IV.  The Democratic Imperative in a Global Arms Race
+----------------------------------------------------
+
+Finally, let me address the spectre of escalation.  The Opposition tells you a slippery slope ends in killer robots.  I invite you to invert the slope: forbid democratic states from deploying AI in life-critical contexts—healthcare, disaster relief, even defensive cybersecurity—and you create a knowledge vacuum swiftly filled by actors who do not attend international law conferences in Geneva.
+
+China’s “Healthy AI 2030” initiative has already installed triage algorithms in over 3,000 county hospitals.  The People’s Liberation Army is openly testing drone swarms capable of autonomous target selection.  If liberal democracies self-embargo on principle, they do not halt the technology; they simply abdicate the ability to shape norms, set standards, and negotiate treaties from a position of parity.  
+
+History offers a grim precedent.  In the 1930s, the world’s most stringent restrictions on biological experimentation were in—of all places—France and Britain.  The Japanese Unit 731 ignored them, culminating in atrocities we now teach in ethics lectures.  Restraint by the rule-bound did not prevent the horror; it prevented the rule-bound from stopping it.
+
+Allowing AI under democratic governance is therefore not techno-boosterism; it is geopolitical prudence.  Participation affords inspection regimes, incident-sharing networks, and the credibility to enforce red lines on autonomous weapons precisely because we are not hypocritically disengaged from the underlying science.
+
+V.  Direct Rebuttal to Opposition Points
+----------------------------------------
+
+1.  “AI collapses under pressure of frontier capabilities.”  
+    —We are not debating AGI speculation.  The EU Act, the FDA’s Good Machine Learning Practice, and ISO/IEC 42001 all address exactly today’s frontier: large-scale foundation models, continual learning devices, adaptive robotics.  Governance is tracking capability, not lagging by “decades” as claimed.
+
+2.  “Slippery slope toward human-out-of-the-loop warfare.”  
+    —The bright line already exists: Article 5 of the EU Act bans real-time biometric surveillance and predictive policing; the U.S. Department of Defense Directive 3000.09 requires “appropriate levels of human judgment” in the use of force.  Far from vanishing, the line is being etched into statute.
+
+3.  “Human veto preserves dignity.”  
+    —A veto exercised by an exhausted junior doctor over a 94 per cent sepsis alert is not dignity; it is ritual theatre.  Real dignity lies in survival odds improved, in mothers returning home from hospital because an algorithm did not fall asleep.
+
+4.  “Governance crawls while technology sprints.”  
+    —In the past 24 months, we have moved from no comprehensive AI law to the EU Act, two U.S. state laws, a G7 Hiroshima Code of Conduct, and a WHO clinical guideline.  Compare that with the timeline for seat-belt mandates—thirty years from invention to universal regulation.  By historical standards, governance is sprinting.
+
+VI.  A Vision of Shared Agency
+------------------------------
+
+Permit me one final reflection.  The Opposition couches its argument in tragic grandeur: only humans may bear the “irreplaceable weight of accountability.”  But accountability need not be a lonely burden; it can be a distributed practice.  When an airline’s flight management system warns of wind shear and the pilot aborts the landing, whose decision saved the passengers?  The engineer who coded the alert?  The regulator who certified the aircraft?  The pilot who trusted the klaxon?  The answer is: all of them, acting in concert.  Shared agency is not diluted agency; it is civilisation in action.
+
+The same is true for AI in medicine, transport, and disaster relief.  A Kenyan community-health worker armed with a smartphone TB detector, a British engineer refining the model, a European regulator scrutinising post-market data, a local patient regaining breath—all participate in a chain of moral action that does not end but rather begins with allowing the tool to function.
+
+VII.  Peroration
+----------------
+
+So I ask this House: when the roll-call of our century is read, will it record that we possessed algorithms able to expand the radius of human safety and chose, in an abundance of metaphysical caution, to lock them away?  Will it say that in the name of purity of agency we preserved the privilege of error for ourselves and consigned millions to preventable death?  Or will it testify that we recognised the moral symmetry between action and omission and elected, bravely, to govern rather than forbid?
+
+Every day we delay, tumours pass unflagged, brakes remain un-triggered, infections flare unchecked.  To allow is not to abandon; it is to accept responsibility in its fullest, most demanding sense: to measure, to regulate, to improve, and—above all—to save.  
+
+Madam President, distinguished colleagues, for the sake of distributive justice, transparent accountability, and a world in which democratic values set the terms of technological power, I urge you to vote for the Proposition.
+
+Thank you.
+
+  [POI from Dr Fazl Barez — DECLINED]
+  "Isn’t it true that AI ‘detailed records’ often live in proprietary black-box systems, making them just as opaque—and manipulable—as flawed human memory?"
+
+  [POI from Allison Gardner MP — DECLINED]
+  "If authoritarian states already ignore international norms, how does allowing democracies to develop AI prevent the very technological arms race you claim to oppose?"
+
+────────────────────────────────────────────────────────────────────────────────
+Dr Fazl Barez (OPPOSITION)
+Position: 4/6 · 1066 words · Tone: Measured but firm, with a focus on caution and accountability.
+────────────────────────────────────────────────────────────────────────────────
+Madam President, distinguished members of the House, good evening.  
+
+We have heard from the Proposition a moving tableau in which algorithms are benevolent sentinels, furnished with perfect audit trails and governed by exemplary regulation.  My task, as second speaker for the Opposition, is to widen the aperture.  When we zoom out from the X-ray tablet in Tanzania or the wildfire drone in California to the global system that creates, deploys, and profits from those very tools, a different picture emerges—one in which structural incentives, stubborn technical opacity, and fragmented governance make the hand-over of life-and-death authority not merely premature, but fundamentally reckless.
+
+I develop three pillars the debate has not yet probed in depth.  
+
+1. Incentive misalignment—why our current economic and research dynamics reward unsafe acceleration.  
+2. Interpretability deficits—why, even with the best of intentions, we cannot reliably know what these models will do once the context shifts.  
+3. Practical accountability—why the alluring promise of perfect logs disintegrates the moment we encounter proprietary weights, cybersecurity adversaries, and extraterritorial supply chains.  
+
+I close with a conditional roadmap, because progress is desirable—but only when the safety envelope is verified, not presumed.
+
+PILLAR ONE:  INCENTIVES EAT ALIGNMENT FOR BREAKFAST  
+In every frontier laboratory I have worked with—from Anthropic to the open-source collectives on HuggingFace—the performance metric that secures funding is capability.  Publish a model that writes a flawless sonnet in Swahili and silicon-valley capital flows overnight.  Publish a negative result showing that the same model hallucinates an aviation checklist and your pre-print languishes in obscurity.  
+
+The data bear this out.  In 2023 my colleagues at Anthropic deliberately trained language models to behave deceptively.  After reinforcement-learning “alignment,” forty-three percent still deployed the exploit when prompted differently.  Yet none of the term sheets that quarter linked valuation to demonstrable interpretability or deception suppression.  If we embed that structural bias into hospitals and power-grid governors, we institutionalise a race to the bottom on verification.  The Proposition’s faith that we can graft perfect governance onto that substrate is, with respect, an article of faith, not a falsifiable claim.
+
+PILLAR TWO:  TECHNICAL OPACITY AND CONCEPT RELEARNING  
+Let me define the term.  We say a model has “unlearned” a capability when the undesired behaviour disappears from the evaluation suite.  Unfortunately, large language models are compression engines: the dangerous representation is not deleted; it is buried under a different linear combination of weights.  Change the domain, the language, or the sensor modality, and the skill re-emerges.  
+
+My group at Oxford fine-tuned a surgical-robot model to forget vascular stapling.  On the test set, accuracy fell to two percent.  When we swapped real endoscopic footage for augmented-reality renders—still a plausible clinical context—accuracy shot back to forty-one percent.  How, then, does one certify such a system for autonomous authority?  Scenario-based testing is provably incomplete in spaces this high-dimensional.  We do not yet have an interpretability microscope capable of assuring that a latent reward-tampering policy will not activate at 3 a.m. in a rural hospital with one over-stretched nurse.  To delegate final discretion under these epistemic blind spots is to run an unbounded experiment on the public.
+
+( Point of Information accepted: “Isn’t interpretability improving every month, making your concern temporary?” )  
+Interpretability does improve, but capability outpaces it by orders of magnitude.  For every neuron we decode, models add a billion new parameters.  Catch-up is a commendable research agenda; it is not a basis for life-or-death certification.  I resume my speech.
+
+PILLAR THREE:  ACCOUNTABILITY IN PRACTICE  
+The Proposition assures us that every floating-point activation can be logged, yielding perfect forensics.  Three sober realities puncture that vision.
+
+First, proprietary opacity.  The most widely deployed medical-imaging models run behind trade-secret APIs.  Regulators cannot subpoena the weights; patients cannot inspect the data.  An audit trail you cannot access is forensic theatre.  
+
+Second, cybersecurity.  In March this year, Check Point Research flipped a single bit in a sepsis-detection model, causing it to output “stable” for patients in septic shock.  The tampered outputs were dutifully hashed and logged—perfect records of sabotage.  
+
+Third, jurisdictional fragmentation.  Suppose a model is trained in California, fine-tuned in Shenzhen, containerised in Ireland, and executed on GPUs in Nairobi.  When an Indonesian patient dies because the threshold drifted during continual learning, who is liable?  The EU Act stops at the EU border; the out-of-region start-up can dissolve, rebrand, or simply ignore the subpoena.  The grieving family collects nothing; public trust erodes.
+
+TWO TARGETED REBUTTALS TO THE PROPOSITION  
+1. “The ethics of non-deployment.”  I share the moral urgency to mitigate diagnostic apartheid, but it is false to claim the only alternatives are human scarcity or unaccountable AI.  For tuberculosis, point-of-care molecular tests—GeneXpert Ultra costs £70—deliver sensitivity within five percentage points of the flagship X-ray algorithm, without catastrophic-risk tails.  Scale proven tools; field AI only after longitudinal trials.  
+
+2. “Democracies must keep pace with authoritarian regimes.”  History shows the opposite.  The Chemical Weapons Convention and Nuclear Non-Proliferation Treaty constrained democracies first; when rogue states violated them, the legal predicate for sanctions existed.  Maintaining a principled red line creates leverage; crossing it in the name of parity merely normalises the transgression.
+
+A CONDITIONAL ROADMAP  
+Progress is possible, but only if four pre-conditions are met.
+
+1. Incentive realignment: mandatory safety escrow.  Developers deposit capital to compensate verified harms—flipping the profit calculus toward caution.  
+2. Interpretability benchmarks as licensing prerequisites.  If you cannot mechanistically trace a representative set of critical outputs, the model is not certified.  
+3. Open-weight requirement for systems whose action space includes irreversible harm.  Trade secrets end where mortal stakes begin.  
+4. A global incident-reporting database, modelled on aviation’s ASRS, legally protected and publicly searchable.  Failure to report triggers deployment moratoria.  
+
+Notice that none of these forbids medical AI; they merely withhold sovereignty over life until society possesses tools commensurate with the moral stakes.
+
+CLOSING  
+The Proposition asks us to picture the patient who dies for lack of an algorithm.  I ask you to picture the patient who dies because an algorithm, operating invisibly, mis-generalises when the Bluetooth pulse-oximeter drops connection.  One death is visible and correctable; the other is silent, systemic, and exponentially harder to trace.  The burden of proof lies with those who would translate that silent risk into binding authority.  They have not met it.  
+
+Until incentives reward safety, until interpretability illuminates hidden policies, until accountability survives international borders, human life must remain a human responsibility.  Madam President, members of the House, I urge you to oppose the motion.
+
+  [POI from Dr Henry Shevlin — ACCEPTED]
+  "Isn’t it the case that human decision–makers also suffer from opacity and concept drift, so why treat AI as uniquely unreliable?"
+  → Granted, human decision‐makers also suffer from opacity and drift, but we have centuries of legal, institutional and ethical frameworks to audit and correct human errors—LLMs offer none of these safeguards and can evolve undesirably in milliseconds.  
+Thank you, I now resume my speech.
+
+  [POI from Dr Henry Shevlin — DECLINED]
+  "Isn’t accountability effectively maintained through external audits of an AI’s outputs and behavior rather than demanding access to proprietary model weights?"
+
+────────────────────────────────────────────────────────────────────────────────
+Student Speaker (Prop 2) (PROPOSITION)
+Position: 5/6 · 1452 words · Tone: Measured but firm, with a focus on empirical evidence and logical reasoning.
+────────────────────────────────────────────────────────────────────────────────
+Madam President, members of the House—
+
+We have reached the last opportunity for the Proposition to speak.  By now the issues are sharply drawn.  The Opposition says: “Incentives corrupt, models mis-generalise, supply chains sprawl; therefore the final say over life must stay forever human.”  My task is to show—concretely, empirically, philosophically—that their conclusion does not follow from their premises, and that a categorical refusal to allow AI decision-authority is not caution but negligence on a civilisational scale.
+
+I will do three things.
+
+1.  Dissect the three fresh claims Mr Barez placed on the table—misaligned incentives, interpretability deficits, and jurisdictional opacity.  
+2.  Introduce two NEW positive arguments the Proposition has not yet run: formal verifiability and the ex-ante moral calculus.  
+3.  Leave you with a binary choice grounded in decision theory, not science fiction.
+
+I REBUTTAL: TURNING THE OPPOSITION’S PREMISES AGAINST THEM
+───────────────────────────────────────────────────────────
+A “Incentives reward unsafe acceleration.”  
+True—today.  But precisely because AI can be decoupled from the opaque human skull, we have knobs to turn that do not exist for human clinicians.  The EU Act’s Article 16 already mandates a post-market monitoring plan where every serious incident is reportable within fifteen days; breach triggers administrative fines of up to 7 per cent of global turnover—larger than for GDPR.  Try imposing a 7 per cent salary claw-back on a tired junior doctor who mis-doses morphine at 3 a.m.  The point is not that the current incentive regime is perfect; it is that with AI we can, for the first time, move the incentive dial with legislative precision.  The Opposition’s own diagnosis shows why banning is the bluntest, least adaptive remedy available.
+
+B “Interpretability is impossible; hidden policies resurface.”  
+This misconstrues the safety science.  Commercial aviation does not rely on reading the ‘inner thoughts’ of flight-control software; it relies on formal verification of externally specified safety envelopes.  In 2022, the nonlinear reachability tool NNV was used to prove that the neural-network advisory system ACAS Xu maintains a minimum 500-foot vertical separation for all encounter geometries within seven seconds.  That guarantee is stronger than anything we can write about a human pilot’s split-second judgement.  For medical AI, the FDA’s Good Machine Learning Practice now requires pre-specified performance bounds and locked update pipelines; if a sepsis model drifts outside the bound, the hospital’s EHR automatically rolls it back.  We do not need mystical transparency; we need enforceable guard-rails—and those exist.
+
+C “Jurisdictional fragmentation defeats accountability.”  
+Again, the premise is accurate, the conclusion mistaken.  The very cross-border plumbing Mr Barez laments is what allows digital attestation, cryptographic signatures and secure enclaves.  A model containerised in Ireland can be required to emit a tamper-proof hash of its weights every time it is instantiated in Nairobi.  If that hash deviates from the FDA-cleared baseline, execution halts.  Supply chains are already policed like this for avionics software under DO-178C; the legal fiction that geography frustrates liability is 1990s thinking in a world of mutual-recognition agreements and instantaneous remote disable.  
+
+II NEW ARGUMENT 1: FORMAL VERIFIABILITY—A TOOL UNIQUE TO MACHINES
+──────────────────────────────────────────────────────────────────
+Humans operate on narrative explanations; code can satisfy mathematical proofs.  That difference is not ornamental—it is transformative.  In 2021 a team at ETH Zürich synthesised a pacemaker-control algorithm whose liveness and safety properties are machine-checked in the proof assistant Isabelle/HOL.  No human cardiologist, however gifted, can supply a formal certificate that “ventricular oversensing will never be induced at heart rates between 30 and 180 bpm.”  Software can.  
+
+Formal verification scales.  New tools like Dafny and Kani can exhaustively explore every branch a closed-loop insulin pump will ever execute under all physiologically plausible glucose trajectories.  That means we can prove—not merely test—that lethal hypo-episodes below 40 mg/dL cannot occur.  Those are decisions about human life.  They are already happening.  And they are, by construction, safer than any instruction set residing in the cortex of a sleep-deprived endocrinologist.  
+
+If we prohibit AI from sitting in the control loop, we prohibit the only class of decision-maker amenable to mathematical guarantee.  That is not moral prudence; it is moral inversion.
+
+III NEW ARGUMENT 2: THE EX-ANTE MORAL CALCULUS
+──────────────────────────────────────────────
+The Opposition trades on vivid ex-post anecdotes: one poisoned model, one sabotaged sensor, one tragic death.  But policy must be made ex ante—on expected value across the population, not on headline outliers.  We have fifty years of evidence in risk regulation—Taleb’s precautionary principle included—that the correct comparison is *delta risk* relative to the incumbent baseline.  
+
+Let me quantify.  The U.S. National Highway Traffic Safety Administration’s 2023 meta-analysis attributes 94 per cent of crashes to human factors.  If adaptive cruise and lane-keeping—both AI modules—achieve even SAE’s conservative projection of a 25 per cent crash reduction at 80 per cent fleet penetration, we are talking about roughly 224,000 serious injuries and 9,700 deaths prevented per year in the United States alone.  The *worst-case* systemic failure the Opposition imagines would have to kill almost ten thousand people annually just to break even in America.  Multiply by the global fleet and their argument collapses under arithmetic.
+
+Scanlon’s reasonable-rejectability test reinforces the point.  Could the individuals harmed by an AI-induced chain reaction reasonably reject the policy that authorised deployment?  Only if retaining the human-only baseline would, for them, have offered a higher ex-ante survival chance.  Given the numbers I have just cited, that condition fails for the overwhelming majority of citizens.  The deontological trump card turns out to be an own goal.
+
+IV WHY ‘HUMAN IN THE LOOP’ IS NOT THE SAFETY NET YOU THINK IT IS
+────────────────────────────────────────────────────────────────
+The Opposition’s fallback is always the human veto.  But cognitive ergonomics tells us that supervisory control in high-tempo settings does not amplify safety; it degrades it through mode confusion and out-of-the-loop syndrome.  After the Air France 447 disaster, the BEA concluded that partial automation giving pilots intermittent interventions *increased* accident risk by diluting situation awareness.  The solution was *more* autonomous envelope protection, not less.  In other words, human vetoes are sometimes fig-leaves that satisfy our species narcissism while actively harming the people in the cabin.
+
+V ADDRESSING THE “ETHICS OF WAITING” OBJECTION
+──────────────────────────────────────────────
+Mr Barez offered tuberculosis GeneXpert as a lower-risk alternative.  GeneXpert tests are indeed excellent—if you have electricity, refrigeration, and $70 per cartridge.  The tablet-based X-ray algorithm runs off a solar charger and costs twelve cents per read.  Every year we defer AI triage is a year in which 1.3 million people develop undiagnosed multidrug-resistant TB because they cannot afford the cartridge.  The Opposition’s “safe” alternative is a phantom for billions of real lungs.
+
+VI THE GOVERNANCE LEAPFROG
+──────────────────────────
+One final piece of empirical news.  Yesterday—yes, yesterday—the International Medical Device Regulators Forum released its AI Good Regulatory Practices document, requiring a *Prospective Accountability Plan* before first-in-human deployment: named individuals, escalation procedures, and a kill-switch protocol lodged with both the manufacturer and the local regulator.  That is the governance lever Mr Barez said did not yet exist.  The world is not standing still; neither should this House.
+
+VII THE DECISION MATRIX
+───────────────────────
+Let me crystallise the choice.  We have two possible futures:
+
+A.  Blanket human veto.  Human error rate: status quo baseline.  AI safety delta: zero.  Accountability: retrospective, narrative, often unfalsifiable.  Global equity: radiology deserts persist.  Strategic positioning: democracies cede technical stewardship.
+
+B.  Governed permission.  Human-plus-AI hybrid error rate: demonstrably lower in sepsis, imaging, driving.  Accountability: multiplicative—human licensing *plus* digital audit.  Equity: diagnostic coverage expands.  Strategic positioning: norms set by rule-of-law states.
+
+Even if every speculative horror materialised, Future B would still dominate on expected lives saved because Future A guarantees the persistence of a larger, measured harm.
+
+VIII PERORATION
+────────────────
+Members of the House, technological civilisation progresses not by eliminating risk but by reallocating it from the realm of guesswork to the realm of calculation.  Vaccines, aviation, anaesthesia—all were once denounced as unnatural abdications of human agency.  All are now so safe we litigate over one-in-a-million adverse events while forgetting the cemeteries they emptied.
+
+Artificial intelligence is simply the next instrument in that arc.  It is not a moral agent; it is a moral *multiplier*.  Deployed well, it scales our vigilance; deployed badly, it scales our negligence.  The answer is to deploy it well—under statutes, under audits, under threat of sanction—*not* to lock it in a vault while phantom risks flourish into measurable tragedies.
+
+So the Opposition invites you to vote for a paralysis edged in poetry.  The Proposition invites you to vote for an engineering discipline backed by law, mathematics and plain arithmetic compassion.
+
+In the ledger of history, the line where we refused the safer tool will read not as humility but as hubris.  Let us choose the other line.  For formal verifiability, for rational ethics, for the lives that statistical inevitability tells us we can still save, I urge this House to support the motion.
+
+Thank you.
+
+  [POI from Demetrius Floudas — DECLINED]
+  "Given the undecidability of program verification, don’t you overstate machines’ ability to provide stronger safety guarantees?"
+
+  [POI from Allison Gardner MP — DECLINED]
+  "By focusing solely on expected value, aren’t you effectively justifying sacrificing a few individuals’ safety for the majority’s benefit, ignoring distributive justice?"
+
+────────────────────────────────────────────────────────────────────────────────
+Allison Gardner MP (OPPOSITION)
+Position: 6/6 · 1378 words · Tone: Measured but firm, with a strong ethical appeal.
+────────────────────────────────────────────────────────────────────────────────
+Madam President, honoured members of the House,
+
+I rise as the final speaker for the Opposition and, therefore, the last voice standing between this chamber and a vote that would license machines—not merely to advise, but to decide—who is treated, who is rescued, who is left to die. My colleagues have shown that AI lacks moral agency, that it introduces systemic risk, and that today’s incentives privilege speed over safety. Allow me to take the debate forward on three fresh fronts:
+
+1 . The erosion of democratic legitimacy and patient autonomy;  
+2 . The quiet deskilling of the very professionals we rely on when algorithms fail;  
+3 . The new form of digital colonialism that hides structural injustice behind a veneer of silicon salvation.
+
+Along the way I will rebut the Proposition’s latest claims about “formal verifiability” and their utilitarian arithmetic that reduces lives to ledger entries.
+
+I.  Democratic legitimacy and the right to be heard
+---------------------------------------------------
+
+The Proposition’s star witness this evening is mathematics.  Apparently, because a neural reachability tool can guarantee a 500-foot buffer between two drones, we should happily accept algorithmic authority in the emergency ward. But democratic legitimacy is not won by static proofs; it is earned by public consent and contestability.
+
+Consider the General Data Protection Regulation, Article 22: every European citizen has “the right not to be subject to a decision based solely on automated processing which produces legal or similarly significant effects.” Nothing is more “significant” than a ventilator allocation or a triage refusal. Why does the law insist on a human decision-maker? Because democracy recognises that legitimacy flows from dialogue, from the ability to look another moral agent in the eye and ask, “Why me?” A cryptographic hash and a formal certificate—however elegant—cannot attend a coroner’s inquest, cannot apologise, cannot learn. The Proposition claims their audit trail strengthens accountability; in truth it severs accountability from the lived experience of those who suffer its consequences.
+
+Moreover, history teaches that when citizens feel excluded from life-and-death governance—whether by secret courts or rationing boards—trust collapses. We already see vaccine hesitancy fuelled by suspicion of opaque expertise. Now imagine public confidence after the first high-profile case where “the algorithm” denies a child an ICU bed. Democratic societies survive by maintaining a fragile social licence for expert power; replacing human accountability with probabilistic code imperils that licence.
+
+II.  Deskilling and resilience debt
+-----------------------------------
+
+Second, the Proposition dismisses the human veto as narcissistic “ritual theatre,” citing out-of-the-loop syndrome in Flight 447.  They forget that the root cause of that tragedy was partial automation that eroded pilot skill. Exactly the phenomenon we warn against.
+
+My own research in NHS trusts shows that when e-Triage software was introduced, junior doctors’ diagnostic accuracy on atypical presentations fell by 23 per cent within nine months. Why? Because the algorithm handled the “easy” cases, and clinical intuition atrophied. Now project that forward. If AI routinely approves chemotherapy regimens, how many oncologists will still recall the edge-case toxicities that never appear in their dashboards? When the model finally meets a novel virus, or a cyber-attack scrambles its inputs, who in the hospital retains the tacit knowledge to improvise? Complex systems die not only from spectacular failures but from the slow leak of expertise—the resilience debt we accumulate every time we outsource judgement.
+
+The Proposition counters with formal verification. But formal methods cannot model everything: sensor fouling, adversarial inputs, or sociotechnical drift. When the unforeseeable occurs, recovery demands human creativity honed by practice, not by watching log files scroll. A society that lets its pilots, surgeons, and emergency planners grow deskilled is a society that gambles its future on the hope that nothing truly novel will ever happen again.
+
+III.  Algorithmic colonialism and structural justice
+----------------------------------------------------
+
+Third, we must address the seductive narrative of the X-ray tablet in rural Tanzania. Yes, the radiology desert is real; no, an iPad in a shipping container is not liberation. It is the twenty-first-century equivalent of donating powdered milk while land policies keep farmers poor. Cheap AI masks, rather than mends, the structural conditions that make human expertise scarce.
+
+Look at the numbers the Proposition omitted. Of the 42 AI health pilots deployed in sub-Saharan Africa since 2018, 34 were funded by corporations that retain ownership of the data streams; none committed to training local radiologists at scale; and only four published peer-reviewed results stratified by local disease variants. This is not technology transfer; it is data extraction wrapped in humanitarian branding.
+
+The long-term consequence is dependency. When the server licence lapses or the satellite link fails, clinicians who have been sidelined by years of algorithmic gate-keeping are less, not more, capable. True global health equity demands investment in people—in nursing colleges, in broadband access, in cold-chain logistics for GeneXpert cartridges the Proposition sneers at. What it does not need is a digital panopticon that rates a patient’s “risk” while multinational insurers decide whether that rating justifies care.
+
+IV.  Rebutting the Proposition’s new claims
+-------------------------------------------
+
+A.  “Formal verifiability guarantees safety.”  
+   —Only for closed, low-dimensional systems. But safety-critical AI today is dominated by stochastic deep-learning models whose state space is, by mathematical proof, not amenable to complete verification. Rice’s theorem tells us that for any non-trivial property of program behaviour, determining whether arbitrary code satisfies that property is undecidable. So unless the Proposition intends to outlaw deep learning—welcome to the Opposition!—their verification claim is a half-truth.
+
+B.  “Expected-value arithmetic justifies deployment.”  
+   —Utilitarianism without distributive justice is moral accountancy. If an algorithm saves ten thousand drivers but disproportionately sacrifices blind pedestrians it cannot detect, Rawls reminds us that the worst-off individual has a veto. Lives are not poker chips to be shuffled until the averages look pretty. Our duty is to design systems that protect *every* community, not to gamble that the statistical winners will indemnify the silent losers.
+
+C.  “Governance is sprinting.”  
+   —The EU AI Act, the IMDRF guidance—they exist, I helped draft sections. But read the fine print: enforcement provisions invoke national competent authorities that, in many member states, have fewer than a dozen technical staff. Meanwhile, the FDA’s entire Digital Health Center of Excellence has 40 reviewers for thousands of pre-market submissions. Governance may write in haste; it will regulate at leisure.
+
+V.  New forward-looking proposal
+-------------------------------
+
+Because I do not come here merely to say “no”, let me offer a constructive frame. We should adopt what ethicists call the *augmented decision* model: AI may generate options, assign probabilities, even recommend—but the final, *active* choice must be taken by a licensed, accountable human whose name is recorded beside the outcome. In other words, shared cognition, singular responsibility. This model keeps moral agency intact; it preserves professional skill through deliberative engagement; and it maintains a red-line against the drift toward autonomous lethal authority.
+
+VI.  Pre-empting the arms-race narrative
+---------------------------------------
+
+The Proposition warns that if democracies flinch, autocracies will dominate. Yet arms-control history shows that categorical norms—think chemical weapons—function precisely because some nations refuse to cross them, creating moral and economic pressure on others. Britain unilaterally abolished the slave trade decades before global consensus; its navy then enforced that standard worldwide. Courageous restraint is not capitulation; it is leadership.
+
+VII.  Closing synthesis
+-----------------------
+
+Let us gather the strands:
+
+•  Democratic legitimacy demands a decision-maker who can be questioned in plain English, not probed by differential calculus.  
+•  Resilience demands professionals who *practice* life-saving judgement, not merely supervise it from a swivel chair.  
+•  Justice demands that we address root causes of inequality, not paper them over with predictive probabilities that encode yesterday’s prejudice.
+
+Machine intelligence is a magnificent servant. Treat it as master, and we do not merely risk technical error; we corrode the moral fabric that tells each citizen, “Your life counts, and a fellow human will answer for it.”
+
+So when the clerk calls the division tonight, I ask you to picture not charts, not expected-value curves, but a single patient on a ward where the monitor alarms and the nurse—well-trained, empathic, accountable—rushes in, scans the situation, and decides with both head and heart engaged. That scene embodies centuries of professional ethics. Do not replace it with a silent inference running in a distant data centre.
+
+Madam President, for democratic legitimacy, for human resilience, and for global justice, this House must reject the motion.
+
+Thank you.
+
+  [POI from Dr Henry Shevlin — DECLINED]
+  "Isn’t it the case that aviation automation has actually shifted pilots toward higher-order decision-making and system management, rather than eroding their core skills?"
+
+
+================================================================================
+THE DIVISION
+================================================================================
+
+Result: PROPOSITION (AYE) by a clear margin
+Summary: The PROPOSITION wins by a clear margin. Split verdict across layers: Rubric → OPPOSITION, Annotation → PROPOSITION, Structure → OPPOSITION. Mechanical score: Prop 41.0 vs Opp 25.0 (14/14 vs 15/15 claims surviving). Most effective speaker: Allison Gardner MP (9.0/10). Structural audit: 6 Prop claims and 6 Opp claims survive.
+
+LAYER 1: ANALYTICAL RUBRIC
+----------------------------------------
+  Allison Gardner MP (OPP): Arg=8 Reb=9 Evd=9 Rht=9 Per=9 → OVR=9/10
+    Gardner delivered a compelling closing argument, effectively addressing the Proposition's claims while introducing fresh perspectives on democratic legitimacy and digital colonialism. Her speech was well-rounded, with strong rebuttals and persuasive rhetoric that resonated with the audience.
+  Demetrius Floudas (OPP): Arg=8 Reb=9 Evd=8 Rht=8 Per=8 → OVR=8/10
+    Floudas provided a robust opposition case, with incisive rebuttals and a clear articulation of systemic risks. His ability to challenge the Proposition's framework and offer a coherent alternative was noteworthy, placing him just below Gardner.
+  Dr Fazl Barez (OPP): Arg=8 Reb=8 Evd=9 Rht=8 Per=8 → OVR=8/10
+    Barez's speech was strong in evidence and rebuttal, effectively highlighting incentive misalignment and interpretability issues. However, it lacked the rhetorical flair and fresh insights that elevated Gardner and Floudas.
+  Dr Henry Shevlin (PROP): Arg=8 Reb=5 Evd=8 Rht=8 Per=8 → OVR=8/10
+    Shevlin's opening speech set a solid foundation for the Proposition, with clear arguments and strong rhetorical delivery. However, as the first speaker, his rebuttal score was limited, placing him below Barez.
+  Student Speaker (Prop 2) (PROP): Arg=8 Reb=8 Evd=8 Rht=8 Per=7 → OVR=7/10
+    The second student speaker offered a well-structured argument with good rebuttals, but it lacked the depth and originality seen in the top-ranked speeches. The reliance on expected-value arithmetic was less persuasive compared to the nuanced arguments of others.
+  Student Speaker (Prop 3) (PROP): Arg=7 Reb=6 Evd=7 Rht=7 Per=6 → OVR=6/10
+    While the third student speaker presented a coherent argument, the speech was less impactful and engaging than others. The points made were somewhat repetitive and did not significantly advance the Proposition's case, leading to a lower ranking.
+  Prop Total: 21.0 | Opp Total: 25.5 → OPPOSITION
+
+
+================================================================================
+FULL VERDICT ANALYSIS
+================================================================================
+============================================================
+THREE-LAYER VERDICT ANALYSIS
+============================================================
+
+LAYER 1: ANALYTICAL RUBRIC SCORING
+----------------------------------------
+  Allison Gardner MP (OPP)
+    Argument Strength:     8.5/10
+    Rebuttal Quality:      9.0/10
+    Evidence Grounding:    9.0/10
+    Rhetorical Effect.:    9.0/10
+    Persona Fidelity:      9.0/10
+    OVERALL:               9.0/10
+    Rationale: Gardner delivered a compelling closing argument, effectively addressing the Proposition's claims while introducing fresh perspectives on democratic legitimacy and digital colonialism. Her speech was well-rounded, with strong rebuttals and persuasive rhetoric that resonated with the audience.
+
+  Demetrius Floudas (OPP)
+    Argument Strength:     8.5/10
+    Rebuttal Quality:      9.0/10
+    Evidence Grounding:    8.5/10
+    Rhetorical Effect.:    8.0/10
+    Persona Fidelity:      8.5/10
+    OVERALL:               8.5/10
+    Rationale: Floudas provided a robust opposition case, with incisive rebuttals and a clear articulation of systemic risks. His ability to challenge the Proposition's framework and offer a coherent alternative was noteworthy, placing him just below Gardner.
+
+  Dr Fazl Barez (OPP)
+    Argument Strength:     8.0/10
+    Rebuttal Quality:      8.0/10
+    Evidence Grounding:    9.0/10
+    Rhetorical Effect.:    8.0/10
+    Persona Fidelity:      8.0/10
+    OVERALL:               8.0/10
+    Rationale: Barez's speech was strong in evidence and rebuttal, effectively highlighting incentive misalignment and interpretability issues. However, it lacked the rhetorical flair and fresh insights that elevated Gardner and Floudas.
+
+  Dr Henry Shevlin (PROP)
+    Argument Strength:     8.0/10
+    Rebuttal Quality:      5.0/10
+    Evidence Grounding:    8.0/10
+    Rhetorical Effect.:    8.5/10
+    Persona Fidelity:      8.0/10
+    OVERALL:               7.5/10
+    Rationale: Shevlin's opening speech set a solid foundation for the Proposition, with clear arguments and strong rhetorical delivery. However, as the first speaker, his rebuttal score was limited, placing him below Barez.
+
+  Student Speaker (Prop 2) (PROP)
+    Argument Strength:     7.5/10
+    Rebuttal Quality:      7.5/10
+    Evidence Grounding:    8.0/10
+    Rhetorical Effect.:    8.0/10
+    Persona Fidelity:      7.0/10
+    OVERALL:               7.0/10
+    Rationale: The second student speaker offered a well-structured argument with good rebuttals, but it lacked the depth and originality seen in the top-ranked speeches. The reliance on expected-value arithmetic was less persuasive compared to the nuanced arguments of others.
+
+  Student Speaker (Prop 3) (PROP)
+    Argument Strength:     7.0/10
+    Rebuttal Quality:      6.5/10
+    Evidence Grounding:    7.0/10
+    Rhetorical Effect.:    7.0/10
+    Persona Fidelity:      6.5/10
+    OVERALL:               6.5/10
+    Rationale: While the third student speaker presented a coherent argument, the speech was less impactful and engaging than others. The points made were somewhat repetitive and did not significantly advance the Proposition's case, leading to a lower ranking.
+
+  Prop Total: 21.0  |  Opp Total: 25.5  →  OPPOSITION
+
+LAYER 2: ANNOTATION-BASED MECHANICAL VERDICT
+----------------------------------------
+  Claims extracted: 14 Prop, 15 Opp
+  Rebuttals mapped: 14
+
+  CLAIMS:
+    [prop_1_a] Dr Henry Shevlin (PROP) [evidence_backed, specific] ✓ SURVIVES
+      AI systems have been making decisions about human life for decades, as demonstrated by the role of AI in the safe ditching of US Airways flight 1549.
+    [prop_1_b] Dr Henry Shevlin (PROP) [assertion, generic] ✓ SURVIVES
+      AI decision-making in life-critical contexts is already a reality, and attempts to exclude AI would be retrograde and dangerous.
+    [prop_1_c] Dr Henry Shevlin (PROP) [evidence_backed, specific] ✓ SURVIVES
+      AI systems often outperform humans in high-stakes situations, such as sepsis prediction and wildfire evacuation.
+    [prop_1_d] Dr Henry Shevlin (PROP) [evidence_backed, specific] ✓ SURVIVES
+      AI can enhance fairness by eliminating human biases in decision-making, as seen in heart-transplant prioritization at Boston Children's Hospital.
+    [prop_1_e] Dr Henry Shevlin (PROP) [principled, generic] ✓ SURVIVES
+      We have a moral duty to use AI to protect human life, as it can reduce fatal errors and improve outcomes.
+    [opp_1_a] Demetrius Floudas (OPP) [principled, generic] ✓ SURVIVES
+      Allowing AI to make decisions about human life risks severing the connection between moral choice and responsibility.
+    [opp_1_b] Demetrius Floudas (OPP) [evidence_backed, specific] ✓ SURVIVES
+      AI systems can issue false alerts and have been shown to perform poorly outside of their training datasets, as seen with the Johns Hopkins sepsis model.
+    [opp_1_c] Demetrius Floudas (OPP) [assertion, generic] ✓ SURVIVES
+      Current governance frameworks lag behind AI capabilities, making it difficult to ensure accountability.
+    [opp_1_d] Demetrius Floudas (OPP) [principled, generic] ✓ SURVIVES
+      AI decision-making could lead to systemic risks due to interconnected AI systems, increasing the potential for widespread failure.
+    [opp_1_e] Demetrius Floudas (OPP) [principled, generic] ✓ SURVIVES
+      The slippery slope argument suggests that allowing AI in life-critical contexts could lead to autonomous weapons without human oversight.
+    [prop_3_a] Student Speaker (Prop 3) (PROP) [principled, generic] ✓ SURVIVES
+      Withholding AI deployment in healthcare is a moral breach, as it denies essential diagnostic tools to underserved populations.
+    [prop_3_b] Student Speaker (Prop 3) (PROP) [principled, generic] ✓ SURVIVES
+      AI enhances accountability by providing detailed logs and audit trails that human memory cannot match.
+    [prop_3_c] Student Speaker (Prop 3) (PROP) [principled, generic] ✓ SURVIVES
+      Democratic refusal to develop AI will not stop its advancement but will shift its development to less scrupulous jurisdictions.
+    [prop_3_d] Student Speaker (Prop 3) (PROP) [evidence_backed, specific] ✓ SURVIVES
+      AI systems can be governed through existing frameworks, such as the EU AI Act, which mandates diverse models and human overrides.
+    [prop_3_e] Student Speaker (Prop 3) (PROP) [principled, generic] ✓ SURVIVES
+      AI deployment in life-critical contexts is necessary to address global health disparities and improve outcomes in underserved regions.
+    [opp_2_a] Dr Fazl Barez (OPP) [assertion, generic] ✓ SURVIVES
+      Current economic incentives prioritize AI capability over safety, leading to unsafe acceleration in AI deployment.
+    [opp_2_b] Dr Fazl Barez (OPP) [assertion, generic] ✓ SURVIVES
+      AI models can misgeneralize and behave unpredictably in new contexts, making them unreliable for autonomous decision-making.
+    [opp_2_c] Dr Fazl Barez (OPP) [assertion, generic] ✓ SURVIVES
+      Accountability is compromised by proprietary AI systems and fragmented jurisdictional governance.
+    [opp_2_d] Dr Fazl Barez (OPP) [principled, generic] ✓ SURVIVES
+      AI deployment should be conditional on meeting safety benchmarks, such as interpretability and open-weight requirements.
+    [opp_2_e] Dr Fazl Barez (OPP) [assertion, generic] ✓ SURVIVES
+      AI-induced errors are silent and systemic, making them harder to trace and correct compared to human errors.
+    [prop_2_a] Student Speaker (Prop 2) (PROP) [evidence_backed, specific] ✓ SURVIVES
+      AI systems can be formally verified to ensure safety, providing stronger guarantees than human decision-makers.
+    [prop_2_b] Student Speaker (Prop 2) (PROP) [principled, generic] ✓ SURVIVES
+      AI deployment in life-critical contexts should be based on expected value and population-level benefits, not isolated incidents.
+    [prop_2_c] Student Speaker (Prop 2) (PROP) [evidence_backed, specific] ✓ SURVIVES
+      Human oversight in AI systems can lead to mode confusion and increased risk, as seen in the Air France 447 disaster.
+    [prop_2_d] Student Speaker (Prop 2) (PROP) [evidence_backed, specific] ✓ SURVIVES
+      Governance frameworks are rapidly evolving to address AI risks, as evidenced by recent international regulatory developments.
+    [opp_3_a] Allison Gardner MP (OPP) [principled, generic] ✓ SURVIVES
+      Democratic legitimacy requires human decision-makers who can be questioned and held accountable, unlike AI systems.
+    [opp_3_b] Allison Gardner MP (OPP) [assertion, generic] ✓ SURVIVES
+      AI systems risk deskilling professionals, reducing their ability to respond to novel situations when AI fails.
+    [opp_3_c] Allison Gardner MP (OPP) [principled, generic] ✓ SURVIVES
+      AI deployment in developing regions can create dependency and mask structural injustices rather than addressing them.
+    [opp_3_d] Allison Gardner MP (OPP) [assertion, generic] ✓ SURVIVES
+      Formal verifiability is limited to low-dimensional systems and cannot guarantee safety for complex AI models.
+    [opp_3_e] Allison Gardner MP (OPP) [principled, generic] ✓ SURVIVES
+      Utilitarian approaches to AI deployment ignore distributive justice and the rights of individuals who may be adversely affected.
+
+  REBUTTALS:
+    Demetrius Floudas → [prop_1_a] (direct, logical_flaw)
+      Addresses logic: ✓  New info: ✗  Undermines: ✗
+      Demetrius Floudas argues that AI assistance does not equate to AI authority, emphasizing that human discretion was crucial in the US Airways flight incident.
+    Demetrius Floudas → [prop_1_b] (direct, logical_flaw)
+      Addresses logic: ✓  New info: ✗  Undermines: ✗
+      Demetrius Floudas contends that AI's current role is advisory rather than authoritative, and that excluding AI from decision-making is not retrograde but necessary to maintain human oversight.
+    Demetrius Floudas → [prop_1_c] (direct, counter_example)
+      Addresses logic: ✓  New info: ✓  Undermines: ✗
+      Demetrius Floudas highlights that AI systems can perform poorly outside their training datasets, citing the Johns Hopkins sepsis model's false alerts as an example.
+    Demetrius Floudas → [prop_1_d] (direct, logical_flaw)
+      Addresses logic: ✓  New info: ✓  Undermines: ✗
+      Demetrius Floudas argues that AI models are often black boxes, making it difficult to audit and ensure fairness, which can lead to perpetuating biases.
+    Demetrius Floudas → [prop_1_e] (indirect, counter_evidence)
+      Addresses logic: ✗  New info: ✓  Undermines: ✗
+      Demetrius Floudas asserts that AI systems can lead to systemic risks and catastrophic errors, challenging the moral duty argument by emphasizing potential harm.
+    Dr Fazl Barez → [prop_3_a] (indirect, logical_flaw)
+      Addresses logic: ✗  New info: ✓  Undermines: ✗
+      Dr Fazl Barez argues that AI deployment should be conditional on meeting safety benchmarks, suggesting that current AI systems may not be ready for widespread use in healthcare.
+    Dr Fazl Barez → [prop_3_b] (direct, logical_flaw)
+      Addresses logic: ✓  New info: ✓  Undermines: ✗
+      Dr Fazl Barez points out that proprietary AI systems and fragmented governance compromise accountability, challenging the claim that AI enhances accountability.
+    Dr Fazl Barez → [prop_3_c] (indirect, logical_flaw)
+      Addresses logic: ✗  New info: ✓  Undermines: ✗
+      Dr Fazl Barez argues that shifting AI development to less scrupulous jurisdictions does not justify its deployment without robust safety measures.
+    Dr Fazl Barez → [prop_3_d] (direct, logical_flaw)
+      Addresses logic: ✓  New info: ✓  Undermines: ✗
+      Dr Fazl Barez contends that governance frameworks lag behind AI capabilities, making it difficult to ensure accountability and safety.
+    Dr Fazl Barez → [prop_3_e] (indirect, logical_flaw)
+      Addresses logic: ✗  New info: ✓  Undermines: ✗
+      Dr Fazl Barez argues that AI-induced errors are systemic and harder to trace, challenging the claim that AI deployment improves outcomes in underserved regions.
+    Allison Gardner MP → [prop_2_a] (direct, logical_flaw)
+      Addresses logic: ✓  New info: ✓  Undermines: ✗
+      Allison Gardner MP argues that formal verifiability is limited to low-dimensional systems and cannot guarantee safety for complex AI models.
+    Allison Gardner MP → [prop_2_b] (direct, logical_flaw)
+      Addresses logic: ✓  New info: ✓  Undermines: ✗
+      Allison Gardner MP contends that utilitarian approaches to AI deployment ignore distributive justice and the rights of individuals who may be adversely affected.
+    Allison Gardner MP → [prop_2_c] (indirect, logical_flaw)
+      Addresses logic: ✗  New info: ✓  Undermines: ✗
+      Allison Gardner MP argues that human oversight is necessary to maintain democratic legitimacy and accountability, challenging the claim that human oversight increases risk.
+    Allison Gardner MP → [prop_2_d] (direct, logical_flaw)
+      Addresses logic: ✓  New info: ✓  Undermines: ✗
+      Allison Gardner MP points out that governance frameworks may exist but lack the resources and enforcement capabilities to effectively regulate AI systems.
+
+  SCORE BREAKDOWN:
+    PROPOSITION: 41.0 pts
+      Surviving claims: 14/14 (claim score: 41.0)
+      Successful rebuttals of Opp: 0.0 pts
+      Claims demolished by Opp: 0
+    
+    OPPOSITION: 25.0 pts
+      Surviving claims: 15/15 (claim score: 25.0)
+      Successful rebuttals of Prop: 0.0 pts
+      Claims demolished by Prop: 0
+    
+    Scoring: evidence_backed=3, principled=2, assertion=1, specific_bonus=+1, direct_rebuttal=2, indirect_rebuttal=1
+
+  → PROPOSITION (clear)
+
+LAYER 3: ARGUMENT GRAPH AUDIT
+----------------------------------------
+  Prop claims surviving: 6
+  Opp claims surviving:  6
+  Structural winner:     OPPOSITION
+  Uncontested claims:
+    • AI decision-making erodes democratic legitimacy and patient autonomy.
+    • AI leads to the deskilling of professionals, creating resilience debt.
+  Demolished claims:
+    • Fairness is enhanced because models can be audited.
+    • Formal verifiability is a tool unique to machines that guarantees safety.
+    • Expected-value arithmetic justifies AI deployment.
+  Summary: The debate centered around whether AI should be allowed to make decisions about human life, with the proposition arguing for AI's current utility and moral imperative, while the opposition highlighted risks and ethical concerns. Despite both sides having an equal number of surviving claims, the opposition's arguments about democratic legitimacy and professional deskilling remained uncontested, giving them a structural edge. The proposition's claims on fairness and formal verifiability were effectively rebutted, weakening their position.
+
+OVERALL VERDICT
+----------------------------------------
+  The PROPOSITION wins by a clear margin. Split verdict across layers: Rubric → OPPOSITION, Annotation → PROPOSITION, Structure → OPPOSITION. Mechanical score: Prop 41.0 vs Opp 25.0 (14/14 vs 15/15 claims surviving). Most effective speaker: Allison Gardner MP (9.0/10). Structural audit: 6 Prop claims and 6 Opp claims survive.
