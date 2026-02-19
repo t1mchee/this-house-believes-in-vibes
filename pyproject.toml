@@ -1,5 +1,5 @@
 [project]
-name = "project-debater"
+name = "this-house-believes-in-vibes"
 version = "0.1.0"
 description = "Cambridge Union Exhibition Debate Simulator — multi-agent persona-driven debate simulation"
 requires-python = ">=3.11"

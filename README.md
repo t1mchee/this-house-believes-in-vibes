@@ -1,4 +1,4 @@
-# Project Debater
+# This House Believes In Vibes
 
 **Multi-agent debate simulation using persona-grounded LLMs.**
 
@@ -28,8 +28,8 @@ Corpus (PDFs, speeches, interviews)
 
 ```bash
 # Clone and setup
-git clone https://github.com/t1mchee/project-debater.git
-cd project-debater
+git clone https://github.com/t1mchee/this-house-believes-in-vibes.git
+cd this-house-believes-in-vibes
 python -m venv .venv && source .venv/bin/activate
 pip install -e .
 
