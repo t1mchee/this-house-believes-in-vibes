@@ -7,9 +7,12 @@ Simulates a full Cambridge Union Exhibition Debate (3v3) by building speaker per
 Built as a pre-debate prediction experiment for the Cambridge Union Lent Term Fifth Debate 2026:
 *"This House Believes AI Should Be Allowed To Make Decisions About Human Life."*
 
-**[Full methodology write-up](METHODOLOGY.md)**
+**[Interactive results dashboard](https://t1mchee.github.io/this-house-believes-in-vibes/)**
 
-[https://t1mchee.github.io/this-house-believes-in-vibes/]
+
+**[Methodology write-up](METHODOLOGY.md)**
+
+
 
 ---
 
