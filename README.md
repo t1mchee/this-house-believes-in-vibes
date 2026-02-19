@@ -8,6 +8,7 @@ Built as a pre-debate prediction experiment for the Cambridge Union Lent Term Fi
 *"This House Believes AI Should Be Allowed To Make Decisions About Human Life."*
 
 **[Full methodology write-up](METHODOLOGY.md)**
+
 [https://t1mchee.github.io/this-house-believes-in-vibes/]
 
 ---
