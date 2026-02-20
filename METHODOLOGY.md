@@ -2,9 +2,9 @@
 
 **Can we predict how a real debate will unfold — before it happens?**
 
-In February 2026, the Cambridge Union scheduled its Lent Term Fifth Debate on the motion *"This House Believes AI Should Be Allowed To Make Decisions About Human Life."* Six speakers — AI researchers, an MP, an international law professor, and two student debaters — would face off in the Union's traditional 3v3 exhibition format.
+In February 2026, the Cambridge Union scheduled its Lent Term Fifth Debate on the motion *"This House Believes AI Should Be Allowed To Make Decisions About Human Life."* Six speakers (AI researchers, an MP, an international law professor, and two student debaters) would face off in the Union's traditional 3v3 exhibition format.
 
-I wanted to see if I could simulate it first.
+I had won a slot to participate in this sebate but wanted to see if I could simulate it first.
 
 A full simulation: six distinct speakers, each arguing from their own published positions, responding to each other in real time, with points of information, definitions battles, and a verdict at the end. Then I wanted to run it dozens of times to map out the space of possible outcomes — what arguments dominate, where the clashes happen, and whether the result is robust or a coin flip.
 
