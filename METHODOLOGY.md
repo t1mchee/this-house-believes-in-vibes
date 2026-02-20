@@ -6,7 +6,7 @@ In February 2026, the Cambridge Union scheduled its Lent Term Fifth Debate on th
 
 I wanted to see if I could simulate it first.
 
-Not a summary. Not talking points. A full simulation: six distinct speakers, each arguing from their own published positions, responding to each other in real time, with points of information, definitions battles, and a verdict at the end. Then I wanted to run it dozens of times to map out the space of possible outcomes — what arguments dominate, where the clashes happen, and whether the result is robust or a coin flip.
+A full simulation: six distinct speakers, each arguing from their own published positions, responding to each other in real time, with points of information, definitions battles, and a verdict at the end. Then I wanted to run it dozens of times to map out the space of possible outcomes — what arguments dominate, where the clashes happen, and whether the result is robust or a coin flip.
 
 This post documents the full methodology, the design choices that mattered, the things that broke, and — most interestingly — what I learned about using LLMs to judge arguments.
 
@@ -28,7 +28,7 @@ Three things have changed since 2019 that make this newly feasible:
 
 The strongest empirical validation came from Khan et al. [[5]](#ref-khan2024) (ICML 2024 Best Paper), which showed that debate with expert debaters achieved 76% accuracy with LLM judges and 88% with human judges, versus 48%/60% naïve baselines. The critical insight: **optimising debaters for persuasiveness improves truth-finding** — unlike consultancy, where stronger single advisors actually decrease accuracy. This asymmetry is the fundamental argument for building an adversarial pipeline rather than a cooperative one.
 
-The question wasn't whether the technology existed. It was whether it could produce something genuinely useful — a simulation with enough fidelity and variation to tell you something you didn't already know about how the debate would go.
+The question isn't whether the technology exists, but whether we could make something genuinely kind of useful to debaters: a simulation with enough fidelity and variation to tell you something you didn't already know about how the debate would go. I teamed up with my roommate from the army Bharath Anantham, who is currently the number one ranked debater in the world to build this out.
 
 ---
 
