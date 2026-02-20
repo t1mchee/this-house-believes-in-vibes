@@ -1,5 +1,7 @@
 # Simulating a Cambridge Union Debate With Multi-Agent LLMs
 
+[This breakdown was obviously written with LLM assistance. I pushed this after staying up the whole night to get the workflow done in time for the debate. A fully human blog post is in the works.]
+
 **Can we predict how a real debate will unfold — before it happens?**
 
 In February 2026, the Cambridge Union scheduled its Lent Term Fifth Debate on the motion *"This House Believes AI Should Be Allowed To Make Decisions About Human Life."* Six speakers (AI researchers, an MP, an international law professor, and two student debaters) would face off in the Union's traditional 3v3 exhibition format.
